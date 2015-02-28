@@ -57,10 +57,15 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 
 [[ -x /usr/bin/dircolors ]] && [[ -e .dircolors ]] && eval `dircolors .dircolors`
 
-#[[ -x ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+[[ -x ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
+#PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
 
-PATH=$PATH:$HOME/.cabal/bin
+PATH=$HOME/.cabal/bin:$PATH
+
+PATH=$PATH:/opt/clean/bin
+
+# OPAM configuration
+. /home/ssdd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
