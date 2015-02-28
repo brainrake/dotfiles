@@ -17,8 +17,8 @@ order += "battery 0"
 order += "cpu_usages"
 order += "load"
 order += "cpu_temperature 0"
-order += "time"
 order += "tztime utc"
+order += "time"
 
 wireless wlp3s0 {
   format_up = "w %quality %ip %essid"
