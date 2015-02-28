@@ -16,7 +16,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;32'
 
 autoload -U promptinit
 promptinit
-prompt adam2 8bit `uname -noim | sha1sum | cut -c 3` 14 7
+prompt adam2 8bit `uname -ni | sha1sum | cut -c 3` 14 7
 
 # key bindings
 bindkey -e
