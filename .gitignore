@@ -8,6 +8,9 @@
 !.i3/
 !.i3/config
 !.Xresources
+!.urxvt
+!.urxvt/ext
+!.urxvt/ext/font-size
 !.dircolors
 !.gitconfig
 !.nanorc
