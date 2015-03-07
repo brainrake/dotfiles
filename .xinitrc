@@ -6,4 +6,5 @@ xsetroot -solid rgb:00/2b/36
 xkbcomp .xkb $DISPLAY
 xset r rate 250 30
 #start-pulseaudio-x11
+touchegg &
 i3

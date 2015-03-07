@@ -5,6 +5,8 @@
 !.config/i3status/config
 !.config/sauerbraten
 !.config/sauerbraten/autoexec.cfg
+!.config/touchegg
+!.config/touchegg.conf
 !.i3/
 !.i3/config
 !.Xresources
