@@ -1,0 +1,95 @@
+{
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "font_face": "Terminus",
+    "font_size": 11,
+    "font_options": ["no_antialias"],
+
+    "gutter": true,
+    "margin": 1,
+    "fold_buttons": false,
+    "rulers": [79],
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "auto_indent": true,
+    "smart_indent": false,
+    "indent_to_bracket": true,
+    "trim_automatic_white_space": true,
+    "word_wrap": "auto",
+    "auto_match_enabled": true,
+    "draw_minimap_border": true,
+    "always_show_minimap_viewport": true,
+    "highlight_line": true,
+
+    "caret_style": "smooth",
+    "caret_extra_top": 2,
+    "caret_extra_bottom": 2,
+    "caret_extra_width": 1,
+
+    "draw_indent_guides": true,
+    "indent_guide_options": ["draw_normal", "draw_active"],
+
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+    "save_on_focus_lost": true,
+
+    "tab_completion": true,
+    "auto_complete": true,
+    "auto_complete_size_limit": 4194304,
+    "auto_complete_delay": 50,
+    "auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
+    "auto_complete_triggers": [ {"selector": "text.html", "characters": "<"} ],
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_with_fields": false,
+
+    "auto_close_tags": true,
+
+    "shift_tab_unindent": true,
+
+    "theme": "Default.sublime-theme",
+
+    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to
+    // scroll slower, or set to larger than 1 to scroll faster
+    "scroll_speed": 1.0,
+
+    // Controls side bar animation when expanding or collapsing folders
+    "tree_animation_enabled": true,
+
+    // Controls animation throughout the application
+    "animation_enabled": true,
+
+    "show_tab_close_buttons": true,
+
+    // Show folders in the side bar in bold
+    "bold_folder_labels": false,
+
+    "overlay_scroll_bars": "enabled",
+
+    // Allows tabs to scroll left and right, instead of simply shrinking
+    "enable_tab_scrolling": true,
+
+    // Always prompt before reloading a file, even if the file hasn't been
+    // modified. The default behavior is to automatically reload a file if it
+    // hasn't been edited. If a file has unsaved changes, a prompt will always
+    // be shown.
+    "always_prompt_for_file_reload": false,
+
+
+    "show_full_path": false,
+
+    // folder_exclude_patterns and file_exclude_patterns control which files
+    // are listed in folders on the side bar. These can also be set on a per-
+    // project basis.
+    "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS"],
+    "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace"],
+    // These files will still show up in the side bar, but won't be included in
+    // Goto Anything or Find in Files
+    "binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
+
+    // File indexing parses all files in the side bar, and builds an index of
+    // their symbols. This is required for Goto Definition to work.
+    "index_files": true,
+
+    // index_exclude_patterns indicate which files won't be indexed.
+    "index_exclude_patterns": ["*.log"],
+    "enable_telemetry": "false",
+}
