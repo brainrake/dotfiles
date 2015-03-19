@@ -14,8 +14,10 @@
 !.config/touchegg.conf
 !.config/volumeicon
 !.config/volumeicon/volumeicon
-!.i3/
+!.i3
 !.i3/config
+!.themes
+!.themes/solarized-dark-gtk
 !.Xresources
 !.urxvt
 !.urxvt/ext
