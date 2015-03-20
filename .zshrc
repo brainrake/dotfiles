@@ -69,3 +69,6 @@ PATH=$PATH:/opt/clean/bin
 
 # OPAM configuration
 . /home/ssdd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# nix
+. /home/ssdd/.nix-profile/etc/profile.d/nix.sh
