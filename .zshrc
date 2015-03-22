@@ -10,7 +10,7 @@ autoload -U compinit
 compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*:processes-names' command 'ps -e -o comm='
-zstyle ':completion:*:processes' command 'ps -au$USER' 
+zstyle ':completion:*:processes' command 'ps -au$USER'
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;32'
 
 
@@ -47,6 +47,8 @@ alias ungz='tar xvzf'
 alias unbz='tar xvjf'
 alias @='sudo '
 alias ta='textadept-curses'
+alias S='subl3 -n --command toggle_menu'
+alias S.='subl3 -n --command toggle_menu -a . README*'
 
 [[ -x /usr/bin/keychain ]] && eval $(keychain --eval --agents ssh -Q --quiet id_ecdsa id_rsa)
 
