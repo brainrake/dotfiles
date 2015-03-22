@@ -49,6 +49,7 @@ alias @='sudo '
 alias ta='textadept-curses'
 alias s='subl3 -n --command toggle_menu'
 alias s.='subl3 -n --command toggle_menu -a . README*(N)'
+alias t='urxvtc -cd $PWD'
 
 [[ -x /usr/bin/keychain ]] && eval $(keychain --eval --agents ssh -Q --quiet id_ecdsa id_rsa)
 
