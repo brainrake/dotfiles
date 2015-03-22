@@ -47,8 +47,8 @@ alias ungz='tar xvzf'
 alias unbz='tar xvjf'
 alias @='sudo '
 alias ta='textadept-curses'
-alias S='subl3 -n --command toggle_menu'
-alias S.='subl3 -n --command toggle_menu -a . README*'
+alias s='subl3 -n --command toggle_menu'
+alias s.='subl3 -n --command toggle_menu -a . README*(N)'
 
 [[ -x /usr/bin/keychain ]] && eval $(keychain --eval --agents ssh -Q --quiet id_ecdsa id_rsa)
 
