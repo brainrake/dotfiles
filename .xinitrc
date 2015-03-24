@@ -1,3 +1,4 @@
+QT_STYLE_OVERRIDE=gtk
 volumeicon &
 #dropboxd &
 xrdb .Xresources
