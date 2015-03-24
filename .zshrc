@@ -53,7 +53,8 @@ alias s='subl3 -n --command toggle_menu'
 alias s.='subl3 -n --command toggle_menu -a . README*(N)'
 alias t='urxvtc -cd $PWD'
 
-[[ -x /usr/bin/keychain ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
+envoy -t gpg-agent
+source <(envoy -p -t gpg-agent)
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev/web
