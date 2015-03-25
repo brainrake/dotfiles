@@ -11,7 +11,7 @@
 !.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 !.config/sublime-text-3/Packages/User/my.tmTheme
 !.config/touchegg
-!.config/touchegg.conf
+!.config/touchegg/touchegg.conf
 !.config/volumeicon
 !.config/volumeicon/volumeicon
 !.i3
