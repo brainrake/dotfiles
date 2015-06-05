@@ -16,6 +16,7 @@
 !.config/volumeicon/volumeicon
 !.i3
 !.i3/config
+!.npmrc
 !.themes
 !.themes/solarized-dark-gtk
 !.Xresources

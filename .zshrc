@@ -75,6 +75,8 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 
 PATH=$HOME/.cabal/bin:$PATH
 
+PATH=$HOME/.node/bin:$PATH
+
 PATH=$PATH:/opt/clean/bin
 
 # OPAM configuration
