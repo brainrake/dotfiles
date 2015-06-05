@@ -48,13 +48,17 @@ alias grep='grep --color'
 alias ungz='tar xvzf'
 alias unbz='tar xvjf'
 alias @='sudo '
+
 alias ta='textadept-curses'
+
 alias s='subl3 -n --command toggle_menu'
 alias s.='subl3 -n --command toggle_menu -a . README*(N)'
+
 alias t='urxvtc -cd $PWD'
 
-envoy -t gpg-agent
-source <(envoy -p -t gpg-agent)
+#envoy -t gpg-agent
+#source <(envoy -p -t gpg-agent)
+[[ -x /usr/bin/keychain ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev/web
