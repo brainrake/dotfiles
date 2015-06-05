@@ -196,12 +196,12 @@ bar {
 
     }
 
-    # mode hide
-    # modifier $mod
+    mode hide
+    modifier Mod1
     status_command i3status
     font pango:Terminus 9
     #tray_output primary
-    output eDP1
+    #output eDP1
 }
 
 bar {
