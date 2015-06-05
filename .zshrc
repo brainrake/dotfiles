@@ -18,8 +18,6 @@ autoload -U promptinit
 promptinit
 prompt adam2 8bit `uname -ni | sha1sum | cut -c 3` 14 7
 
-QT_STYLE_OVERRIDE=gtk
-
 # key bindings
 bindkey -e
 bindkey "\e[1~" beginning-of-line
@@ -50,37 +48,15 @@ alias unbz='tar xvjf'
 alias @='sudo '
 
 alias ta='textadept-curses'
-
-alias s='subl3 -n --command toggle_menu'
-alias s.='subl3 -n --command toggle_menu -a . README*(N)'
+alias s='sublime -n --command toggle_menu'
+alias s.='sublime -n --command toggle_menu -a . README*(N)'
 
 alias t='urxvtc -cd $PWD'
 
+[[ -x /usr/bin/keychain ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 #envoy -t gpg-agent
 #source <(envoy -p -t gpg-agent)
-[[ -x /usr/bin/keychain ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
-
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/dev/web
-export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
-[[ -x /usr/bin/virtualenvwrapper_lazy.sh ]] && source /usr/bin/virtualenvwrapper_lazy.sh
 
 [[ -x /usr/bin/dircolors ]] && [[ -e .dircolors ]] && eval `dircolors .dircolors`
 
-[[ -x ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
-
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-#PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
-
-PATH=$HOME/.cabal/bin:$PATH
-
-PATH=$HOME/.node/bin:$PATH
-
-PATH=$PATH:/opt/clean/bin
-
-# OPAM configuration
-. /home/ssdd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-# nix
-. /home/ssdd/.nix-profile/etc/profile.d/nix.sh
+PATH=$PATH:$HOME/.node/bin
