@@ -1,4 +1,4 @@
-urxvt.font: xft:Terminus:pixelsize=10
+URxvt.font: xft:Terminus:pixelsize=10
 !urxvt.keysym.M-u:	perl:url-select:select_next
 urxvt*saveLines:	65535
 urxvt*termName:	        rxvt-256color
@@ -54,7 +54,7 @@ URxvt.internalBorder:       3
 
 ! Fonts
 URxvt.allow_bold:           false
-URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+!URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
 !URxvt*font: xft:Monospace:pixelsize=14
 !URxvt*boldFont: xft:Monospace:pixelsize=14
 
