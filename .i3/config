@@ -1,6 +1,16 @@
-# i3 config file (v4)
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+exec "export QT_STYLE_OVERRIDE=gtk"
+exec "volumeicon"
+exec "xrdb .Xresources"
+exec "xsetroot -solid rgb:00/2b/36"
+exec "xkbcomp .xkb $DISPLAY"
+exec "xset r rate 250 30"
+#exec touchegg
+exec 'urxvtd -o -f'
+
+#exec 'dropboxd'
+#exec 'setxkbmap -layout "us,hu(qwerty)" -option ctrl:nocaps,grp:switch"'
+#exec start-pulseaudio-x11
+
 
 set $mod Mod4
 
