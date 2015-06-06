@@ -51,7 +51,7 @@ alias ta='textadept-curses'
 alias s='sublime -n --command toggle_menu'
 alias s.='sublime -n --command toggle_menu -a . README*(N)'
 
-alias t='urxvtc -cd $PWD'
+alias t='setsid urxvt -cd $PWD'
 
 [[ -x /usr/bin/keychain ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 #envoy -t gpg-agent

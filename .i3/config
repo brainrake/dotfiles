@@ -5,7 +5,7 @@ exec "xsetroot -solid rgb:00/2b/36"
 exec "xkbcomp .xkb $DISPLAY"
 exec "xset r rate 250 30"
 #exec touchegg
-exec 'urxvtd -o -f'
+#exec "urxvtd -o -f"
 
 #exec 'dropboxd'
 #exec 'setxkbmap -layout "us,hu(qwerty)" -option ctrl:nocaps,grp:switch"'
@@ -30,7 +30,7 @@ font pango:Terminus 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
