@@ -53,10 +53,10 @@ alias s.='sublime -n --command toggle_menu -a . README*(N)'
 
 alias t='setsid urxvt -cd $PWD'
 
-[[ -x `which keychain` ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
+[[ -x `command -v keychain` ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 #envoy -t gpg-agent
 #source <(envoy -p -t gpg-agent)
 
-[[ -x /usr/bin/dircolors ]] && [[ -e .dircolors ]] && eval `dircolors .dircolors`
+[[ -x `command -v dircolors` ]] && [[ -e .dircolors ]] && eval `dircolors .dircolors`
 
 PATH=$PATH:$HOME/.node/bin
