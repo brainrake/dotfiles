@@ -59,4 +59,4 @@ alias t='setsid urxvt -cd $PWD'
 
 [[ -x `command -v dircolors` ]] && [[ -e .dircolors ]] && eval `dircolors .dircolors`
 
-PATH=$PATH:$HOME/.node/bin
+PATH=$PATH:$HOME/.npm_global/bin
