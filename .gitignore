@@ -1,5 +1,7 @@
 *
 !.gitignore
+!.root
+!.root/configuration.nix
 !.nixpkgs
 !.nixpkgs/config.nix
 !.config
