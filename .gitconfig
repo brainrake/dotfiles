@@ -1,26 +1,18 @@
-[color]
-	ui = auto
 [user]
-	email = martonboros@gmail.com
-	name = Márton Boros\n
+  email = martonboros@gmail.com
+  name = Márton Boros
 [alias]
-	lol = log --oneline --graph --decorate
-    s = status -sb 
-    ps = push
-    pl = pull
-    a = add
-    c = commit -m 
-    m = merge
+  lol = log --oneline --graph --decorate
+  s = status -sb
+  ps = push
+  pl = pull
+  a = add
+  c = commit -m
+  m = merge
+  d = diff --color-words
 [push]
 	default = current
 [merge]
 	defaultToUpstream = on
-[giggle]
-	main-window-maximized = false
-	main-window-geometry = 965x750+0+16
-	history-view-vpane-position = 347
-	main-window-view = HistoryView
-	file-view-vpane-position = 388
-	show-graph = true
 [branch]
 	autosetuprebase = always
