@@ -1,21 +1,21 @@
 URxvt.font: xft:Terminus:pixelsize=10
-!urxvt.keysym.M-u:	perl:url-select:select_next
-urxvt*saveLines:	65535
-urxvt*termName:	        rxvt-256color
-urxvt*cursorBlink:	false
-urxvt*loginShell:	true
-urxvt*scrollBar:	false
-urxvt.realBold: True
-!urxvt.urlLauncher:	firefox
-!urxvt*urgentOnBell:	true
-!urxvt*secondaryScroll:	true
-!urxvt*perl-ext:	default,url-select
-!urxvt.underlineURLs:	true
-URxvt*scrollTtyOutput:	false
-URxvt*scrollWithBuffer:	true
-URxvt*scrollTtyKeypress:	true
-!URXvt*font: xft:Terminus:pixelsize=14
-!URXvt*boldFont: xft:Terminus Bold
+!URxvt.keysym.M-u:perl:url-select:select_next
+URxvt.saveLines: 65535
+URxvt.termName: rxvt-256color
+URxvt.cursorBlink: false
+URxvt.loginShell: true
+URxvt.scrollBar: false
+URxvt.realBold: True
+!URxvt.urlLauncher:	firefox
+!URxvt.urgentOnBell: true
+!URxvt.secondaryScroll:	true
+!URxvt.perl-ext: default,url-select
+!URxvt.underlineURLs:	true
+URxvt.scrollTtyOutput:	false
+URxvt.scrollWithBuffer:	true
+URxvt.scrollTtyKeypress:	true
+!URXvt.font: xft:Terminus:pixelsize=14
+!URXvt.boldFont: xft:Terminus Bold
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
@@ -48,18 +48,17 @@ URxvt.transparent:          false
 URxvt.urgentOnBell:         true
 URxvt.visualBell:           true
 URxvt.loginShell:           true
-URxvt.saveLines:            50
 URxvt.internalBorder:       3
 !URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           false
 !URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
-!URxvt*font: xft:Monospace:pixelsize=14
-!URxvt*boldFont: xft:Monospace:pixelsize=14
+!URxvt.font: xft:Monospace:pixelsize=14
+!URxvt.boldFont: xft:Monospace:pixelsize=14
 
 ! Fix font space
-!URxvt*letterSpace: -1
+!URxvt.letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollStyle:          rxvt
@@ -125,5 +124,5 @@ URxvt.pointerColorForeground: #93a1a1
 !!!!!!!!!!! font size
 URxvt.keysym.C-equal:     perl:font-size:increase
 URxvt.keysym.C-minus:   perl:font-size:decrease
-URxvt.keysym.C-S-plus:   perl:font-size:incglobal
-URxvt.keysym.C-S-underscore: perl:font-size:decglobal
+#URxvt.keysym.C-S-plus:   perl:font-size:incglobal
+#URxvt.keysym.C-S-underscore: perl:font-size:decglobal

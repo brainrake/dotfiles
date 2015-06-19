@@ -13,7 +13,7 @@ exec "compton"
 #exec start-pulseaudio-x11
 
 # start a terminal
-bindsym $mod+Return exec urxvt -sl 10000 -e fish
+bindsym $mod+Return exec urxvt -e fish
 
 
 set $mod Mod4
