@@ -4,9 +4,10 @@ exec "xrdb .Xresources"
 exec "xsetroot -solid rgb:00/2b/36"
 exec "xkbcomp .xkb $DISPLAY"
 exec "xset r rate 250 30"
+exec "compton"
+
 #exec touchegg
 #exec "urxvtd -o -f"
-
 #exec 'dropboxd'
 #exec 'setxkbmap -layout "us,hu(qwerty)" -option ctrl:nocaps,grp:switch"'
 #exec start-pulseaudio-x11
@@ -30,7 +31,7 @@ font pango:Terminus 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
