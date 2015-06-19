@@ -12,6 +12,9 @@ exec "compton"
 #exec 'setxkbmap -layout "us,hu(qwerty)" -option ctrl:nocaps,grp:switch"'
 #exec start-pulseaudio-x11
 
+# start a terminal
+bindsym $mod+Return exec urxvt -sl 10000 -e fish
+
 
 set $mod Mod4
 
@@ -29,9 +32,6 @@ font pango:Terminus 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
