@@ -5,6 +5,8 @@
 !.nixpkgs
 !.nixpkgs/config.nix
 !.config
+!.config/doublecmd
+!.config/doublecmd/doublecmd.xml
 !.config/i3status
 !.config/i3status/config
 !.config/sauerbraten
