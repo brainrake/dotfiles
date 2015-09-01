@@ -4,7 +4,7 @@ exec "xrdb .Xresources"
 exec "xsetroot -solid rgb:00/2b/36"
 exec "xkbcomp .xkb $DISPLAY"
 exec "xset r rate 250 30"
-exec "compton"
+#exec "compton"
 
 #exec touchegg
 #exec "urxvtd -o -f"
