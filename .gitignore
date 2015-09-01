@@ -9,6 +9,9 @@
 !.config/doublecmd/doublecmd.xml
 !.config/i3status
 !.config/i3status/config
+!.config/mpv
+!.config/mpv/mpv.conf
+!.config/mpv/input.conf
 !.config/sauerbraten
 !.config/sauerbraten/autoexec.cfg
 !.config/sublime-text-3
