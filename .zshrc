@@ -18,6 +18,9 @@ autoload -U promptinit
 promptinit
 prompt adam2 8bit `uname -ni | sha1sum | cut -c 3` 14 7
 
+#prompt adam2 8bit `uname -ni | sha1sum | cut -c 3` black black black magenta
+#prompt_char="%(!.#.%B%F{black}>)"
+
 # key bindings
 bindkey -e
 bindkey "\e[1~" beginning-of-line
