@@ -35,7 +35,7 @@ bindkey "\e[5D" backward-word
 bindkey "\eOd" emacs-backward-word
 bindkey "\e\e[C" forward-word
 bindkey "\e\e[D" backward-word
-bindkey "^H" backward-delete-word
+#bindkey "^H" backward-delete-word
 # for rxvt
 bindkey "\e[8~" end-of-line
 bindkey "\e[7~" beginning-of-line
