@@ -15,6 +15,9 @@ exec "xset r rate 250 30"
 # start a terminal
 bindsym $mod+Return exec urxvt
 
+bindsym $mod+Shift+i exec xrandr --output HDMI1 --off --output eDP1 --mode 1920x1080 --pos 0x0
+bindsym $mod+Shift+o exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --mode 1920x1080 --pos 0x1080
+bindsym $mod+Shift+p exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --off --pos 0x1080
 
 set $mod Mod4
 
