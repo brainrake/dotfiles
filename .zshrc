@@ -66,3 +66,4 @@ PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
 PATH=$PATH:$HOME/.cabal/bin
 PATH=$PATH:$HOME/.npm_global/bin
 PATH=$PATH:$HOME/.bin
+PATH=$PATH:$HOME/.local/bin
