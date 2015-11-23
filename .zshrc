@@ -67,3 +67,6 @@ PATH=$PATH:$HOME/.cabal/bin
 PATH=$PATH:$HOME/.npm_global/bin
 PATH=$PATH:$HOME/.bin
 PATH=$PATH:$HOME/.local/bin
+
+# OPAM configuration
+. /home/ssdd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
