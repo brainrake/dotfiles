@@ -89,6 +89,11 @@ bindsym $mod+minus unmark awot;
 # switch to previous workspace
 bindsym $mod+grave workspace back_and_forth; [con_mark="awot"] move workspace current; [con_mark="awot"] focus tiling;
 
+bindsym $mod+Mod1+Right workspace next_on_output
+bindsym $mod+Mod1+Left workspace prev_on_output
+bindsym $mod+Mod1+Shift+Right move workspace next_on_output; workspace next_on_output;
+bindsym $mod+Mod1+Shift+Left move workspace prev_on_output; workspace prev_ou_output;
+
 # switch to workspace
 #bindsym $mod+grave workspace 0; [con_mark="awot"] move workspace current; [con_mark="awot"] focus tiling;
 bindsym $mod+1 workspace 1; [con_mark="awot"] move workspace current; focus tiling;
