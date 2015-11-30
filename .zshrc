@@ -70,3 +70,13 @@ PATH=$PATH:$HOME/.local/bin
 
 # OPAM configuration
 . /home/ssdd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+if test -r "${NIX_PROFILE:-$HOME/.nix-profile}/etc/profile.d/nix.sh"; then
+    . "${NIX_PROFILE:-$HOME/.nix-profile}/etc/profile.d/nix.sh"
+elif test -r "${NIX_STATE_DIR:-/nix/var/nix}/profiles/default/etc/profile.d/nix.sh"; then
+    . "${NIX_STATE_DIR:-/nix/var/nix}/profiles/default/etc/profile.d/nix.sh"
+fi
+if type nix-env > /dev/null; then
+    export LOCALE_ARCHIVE=`nix-env --installed --no-name --out-path --query glibc-locales`/lib/locale/locale-archive
+fi
+
