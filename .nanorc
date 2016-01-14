@@ -63,7 +63,7 @@ set autoindent
 set matchbrackets "(<[{)>]}"
 
 ## Use the blank line below the titlebar as extra editing space.
-# set morespace
+set morespace
 
 ## Enable mouse support, if available for your system.  When enabled,
 ## mouse clicks can be used to place the cursor, set the mark (with a
@@ -153,7 +153,7 @@ set softwrap
 # set suspend
 
 ## Use this tab size instead of the default; it must be greater than 0.
-# set tabsize 8
+set tabsize 4
 
 ## Convert typed tabs to spaces.
 set tabstospaces
@@ -234,79 +234,79 @@ set tabstospaces
 
 
 ## Nanorc files
-include "/usr/share/nano/nanorc.nanorc"
+include "/var/run/current-system/sw/share/nano/nanorc.nanorc"
 
 ## C/C++
-include "/usr/share/nano/c.nanorc"
+include "/var/run/current-system/sw/share/nano/c.nanorc"
 
 ## Makefiles
-include "/usr/share/nano/makefile.nanorc"
+include "/var/run/current-system/sw/share/nano/makefile.nanorc"
 
 ## Cascading Style Sheets
-include "/usr/share/nano/css.nanorc"
+include "/var/run/current-system/sw/share/nano/css.nanorc"
 
 ## Debian files
-# include "/usr/share/nano/debian.nanorc"
+# include "/var/run/current-system/sw/share/nano/debian.nanorc"
 
 ## Gentoo files
-# include "/usr/share/nano/gentoo.nanorc"
+# include "/var/run/current-system/sw/share/nano/gentoo.nanorc"
 
 ## HTML
-include "/usr/share/nano/html.nanorc"
+include "/var/run/current-system/sw/share/nano/html.nanorc"
 
 ## PHP
-# include "/usr/share/nano/php.nanorc"
+# include "/var/run/current-system/sw/share/nano/php.nanorc"
 
 ## TCL
-# include "/usr/share/nano/tcl.nanorc"
+# include "/var/run/current-system/sw/share/nano/tcl.nanorc"
 
 ## TeX
-# include "/usr/share/nano/tex.nanorc"
+# include "/var/run/current-system/sw/share/nano/tex.nanorc"
 
 ## Quoted emails (under e.g. mutt)
-# include "/usr/share/nano/mutt.nanorc"
+# include "/var/run/current-system/sw/share/nano/mutt.nanorc"
 
 ## Patch files
-include "/usr/share/nano/patch.nanorc"
+include "/var/run/current-system/sw/share/nano/patch.nanorc"
 
 ## Manpages
-include "/usr/share/nano/man.nanorc"
+include "/var/run/current-system/sw/share/nano/man.nanorc"
 
 ## Groff
-# include "/usr/share/nano/groff.nanorc"
+# include "/var/run/current-system/sw/share/nano/groff.nanorc"
 
 ## Perl
-# include "/usr/share/nano/perl.nanorc"
+# include "/var/run/current-system/sw/share/nano/perl.nanorc"
 
 ## Python
-include "/usr/share/nano/python.nanorc"
+include "/var/run/current-system/sw/share/nano/python.nanorc"
 
 ## Ruby
-include "/usr/share/nano/ruby.nanorc"
+include "/var/run/current-system/sw/share/nano/ruby.nanorc"
 
 ## Java
-include "/usr/share/nano/java.nanorc"
+include "/var/run/current-system/sw/share/nano/java.nanorc"
 
 ## Fortran
-# include "/usr/share/nano/fortran.nanorc"
+# include "/var/run/current-system/sw/share/nano/fortran.nanorc"
 
 ## Objective-C
-# include "/usr/share/nano/objc.nanorc"
+# include "/var/run/current-system/sw/share/nano/objc.nanorc"
 
 ## OCaml
-include "/usr/share/nano/ocaml.nanorc"
+include "/var/run/current-system/sw/share/nano/ocaml.nanorc"
 
 ## AWK
-# include "/usr/share/nano/awk.nanorc"
+# include "/var/run/current-system/sw/share/nano/awk.nanorc"
 
 ## Assembler
-# include "/usr/share/nano/asm.nanorc"
+# include "/var/run/current-system/sw/share/nano/asm.nanorc"
 
 ## Bourne shell scripts
-# include "/usr/share/nano/sh.nanorc"
+# include "/var/run/current-system/sw/share/nano/sh.nanorc"
 
 ## POV-Ray
-# include "/usr/share/nano/pov.nanorc"
+# include "/var/run/current-system/sw/share/nano/pov.nanorc"
 
 ## XML-type files
-# include "/usr/share/nano/xml.nanorc"
+# include "/var/run/current-system/sw/share/nano/xml.nanorc"
