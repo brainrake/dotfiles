@@ -1,9 +1,15 @@
 *
 !.gitignore
-!.root
+!.root/
 !.root/configuration.nix
-!.nixpkgs
+!.nixpkgs/
 !.nixpkgs/config.nix
+!.atom/
+!.atom/config.cson
+!.atom/init.coffee
+!.atom/keymap.cson
+!.atom/packages.cson
+!.atom/styles.less
 !.config
 !.config/doublecmd
 !.config/doublecmd/doublecmd.xml

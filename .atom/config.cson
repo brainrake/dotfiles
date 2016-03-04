@@ -1,0 +1,38 @@
+"*":
+  "atom-typescript": {}
+  autosave:
+    enabled: true
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "metrics"
+      "linter-pylint"
+      "spell-check"
+      "tabs"
+    ]
+    projectHome: "/home/ssdd/dev"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    fontSize: 12
+    invisibles: {}
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "59362366-325f-a88f-954d-6375e359219a"
+  fonts:
+    fontFamily: "Bitstream Vera Sans Mono"
+  linter:
+    showErrorPanel: false
+    showErrorTabProject: false
+  pigments: {}
+  "spell-check": {}
+  tabs:
+    alwaysShowTabBar: false
+    enableVcsColoring: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,2 @@
+'atom-workspace atom-text-editor':
+  'ctrl-delete': 'editor:delete-to-end-of-word'
