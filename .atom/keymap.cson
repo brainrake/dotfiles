@@ -1,2 +1,3 @@
-'atom-workspace atom-text-editor':
-  'ctrl-delete': 'editor:delete-to-end-of-word'
+'.editor':
+  'ctrl-backspace': 'editor:delete-to-previous-word-boundary'
+  'ctrl-delete': 'editor:delete-to-next-word-boundary'
