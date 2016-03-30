@@ -14,5 +14,6 @@
 	default = current
 [merge]
 	defaultToUpstream = on
+	ff = false
 [branch]
 	autosetuprebase = always
