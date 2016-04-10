@@ -1,5 +1,14 @@
 "*":
+  "activate-power-mode":
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake: {}
   "atom-typescript": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    includeCompletionsFromAllBuffers: false
   autosave:
     enabled: true
   core:
@@ -17,13 +26,15 @@
       "solarized-dark-syntax"
     ]
   editor:
-    fontSize: 12
+    autoIndentOnPaste: false
     invisibles: {}
-    showIndentGuide: true
   "exception-reporting":
     userId: "59362366-325f-a88f-954d-6375e359219a"
   fonts:
     fontFamily: "Bitstream Vera Sans Mono"
+  "ide-purescript": {}
+  "language-elm": {}
+  "language-idris": {}
   linter:
     showErrorPanel: false
     showErrorTabProject: false
@@ -37,3 +48,6 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
+".source.ts":
+  editor:
+    tabLength: 4
