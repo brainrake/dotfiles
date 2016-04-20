@@ -20,6 +20,12 @@
 !.config/mpv/input.conf
 !.config/sauerbraten
 !.config/sauerbraten/autoexec.cfg
+!.config/sublime-text-3
+!.config/sublime-text-3/Packages
+!.config/sublime-text-3/Packages/User
+!.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+!.config/sublime-text-3/Packages/User/my.tmTheme
+!.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 !.config/touchegg
 !.config/touchegg/touchegg.conf
 !.config/volumeicon
