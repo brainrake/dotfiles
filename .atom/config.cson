@@ -1,10 +1,4 @@
 "*":
-  "activate-power-mode":
-    particles:
-      size: {}
-      spawnCount: {}
-      totalCount: {}
-    screenShake: {}
   "atom-typescript": {}
   "autocomplete-plus":
     confirmCompletion: "tab"
@@ -19,6 +13,7 @@
       "linter-pylint"
       "spell-check"
       "tabs"
+      "language-idris"
     ]
     projectHome: "/home/ssdd/dev"
     themes: [
@@ -27,6 +22,8 @@
     ]
   editor:
     autoIndentOnPaste: false
+    fontFamily: "Mono"
+    fontSize: 19
     invisibles: {}
   "exception-reporting":
     userId: "59362366-325f-a88f-954d-6375e359219a"
@@ -40,6 +37,8 @@
     showErrorTabProject: false
   pigments: {}
   "spell-check": {}
+  susave:
+    tryDefaultSave: false
   tabs:
     alwaysShowTabBar: false
     enableVcsColoring: true
