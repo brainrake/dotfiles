@@ -56,6 +56,8 @@ alias s.='sublime -n --command toggle_menu -a . README*(N)'
 
 alias t='setsid urxvt -cd $PWD'
 
+nix(){ nix-env -qa \* -P -f '<nixpkgs>' | grep -i "$1"; }
+
 [[ -x `command -v keychain` ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 #envoy -t gpg-agent
 #source <(envoy -p -t gpg-agent)
