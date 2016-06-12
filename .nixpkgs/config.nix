@@ -10,13 +10,17 @@
     my_ = with pkgs; buildEnv {
       name = "my_";
       paths = [
-        i3 i3status i3lock dmenu compton xbacklight
-        zsh fish bc rxvt_unicode evilvte xfce.terminal
-        sublime3 textadept
-        mc htop psmisc
+        i3 i3status i3lock dmenu compton xorg.xbacklight volumeicon xorg.xev hsetroot
+        arandr glxinfo
+        zsh rxvt_unicode bc
+        git
+        sublime3 textadept atom
+        mc htop psmisc pcmanfm
         feh geeqie scrot
         nox
         chromium firefox
+        transmission_gtk
+        mpv
         # nodejs
       ];
     };
