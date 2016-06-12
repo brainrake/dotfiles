@@ -20,6 +20,9 @@ bindsym $mod+Shift+i exec xrandr --output HDMI1 --off --output eDP1 --mode 1920x
 bindsym $mod+Shift+o exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --mode 1920x1080 --pos 0x1080
 bindsym $mod+Shift+p exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --off --pos 0x1080
 
+bindsym XF86MonBrightnessUp exec xbacklight -inc 15
+bindsym XF86MonBrightnessDown exec xbacklight -dec 15
+
 set $mod Mod4
 
 new_window 1pixel
