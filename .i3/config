@@ -10,7 +10,7 @@ exec "hsetroot -solid "#002b36"
 #exec touchegg
 #exec "urxvtd -o -f"
 #exec 'dropboxd'
-#exec 'setxkbmap -layout "us,hu(qwerty)" -option ctrl:nocaps,grp:switch"'
+#exec 'setxkbmap -layout "us,hu(qwerty)" -option "ctrl:nocaps,grp:switch"'
 #exec start-pulseaudio-x11
 
 # start a terminal
