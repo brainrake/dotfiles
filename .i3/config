@@ -3,7 +3,7 @@ exec "volumeicon"
 exec "xrdb .Xresources"
 exec "xkbcomp .xkb $DISPLAY"
 exec "xset r rate 250 30"
-exec "compton"
+exec "compton --backend=glx --vsync=opengl-swc"
 exec "xsetroot -solid rgb:00/2b/36"
 exec "hsetroot -solid "#002b36"
 
