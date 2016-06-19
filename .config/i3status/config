@@ -7,33 +7,33 @@ general {
 }
 
 #order += "ipv6"
+order += "battery 0"
+order += "wireless wlp58s0"
 order += "disk /"
 #order += "disk /home"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
-order += "wireless wlp3s0"
 #order += "ethernet eth0"
-order += "battery 0"
 order += "cpu_usages"
 order += "load"
-order += "cpu_temperature 0"
+#order += "cpu_temperature 0"
 order += "tztime utc"
 order += "time"
 
 wireless wlp3s0 {
-  format_up = "w %quality %ip %essid"
-  format_down = "w down"
+  format_up = " w %quality %ip %essid "
+  format_down = " w down "
 }
 
 ethernet eth0 {
   # if you use %speed, i3status requires root privileges
   #format_up = "e %ip (%speed)"
-  format_up = "e %ip"
-  format_down = "e down"
+  format_up = " e %ip "
+  format_down = " e down "
 }
 
 battery 0 {
-  format = "%status %percentage %remaining"
+  format = " %status %percentage %remaining "
 }
 
 run_watch DHCP {
@@ -45,31 +45,31 @@ run_watch VPN {
 }
 
 cpu_usage {
-  format = " %usage"
+  format = " %usage "
 }
 
 load {
-  format = "%1min"
+  format = " %1min "
 }
 
 cpu_temperature 0 {
-  format = "%degrees°C "
+  format = " %degrees°C "
   path = "/sys/devices/platform/coretemp.0/temp1_input"
 }
 
 disk "/" {
-  format = "%free"
+  format = " %free "
 }
 
 disk "/home" {
-  format = "%free"
+  format = " %free "
 }
 
 time {
-  format = "%a %Y-%m-%d %H:%M:%S"
+  format = " %a %Y-%m-%d %H:%M:%S "
 }
 
 tztime utc {
   timezone = "UTC"
-  format = "%H:%M:%S utc"
+  format = " %H:%M:%S utc "
 }
