@@ -230,7 +230,7 @@ bar {
     mode hide
     modifier Mod1
     status_command i3status
-    font pango:Terminus 9
+    font pango:Terminus 16
     #tray_output primary
     #output eDP1
 }
