@@ -23,6 +23,8 @@ bindsym $mod+Shift+p exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --out
 bindsym XF86MonBrightnessUp exec xbacklight -inc 15
 bindsym XF86MonBrightnessDown exec xbacklight -dec 15
 
+bindsym XF86Sleep exec /home/ssdd/.bin/lock
+
 set $mod Mod4
 
 new_window 1pixel
