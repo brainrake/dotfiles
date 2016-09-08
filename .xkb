@@ -1278,9 +1278,9 @@ xkb_symbols "pc+us+hu(qwerty):2+inet(evdev)+group(switch)+ctrl(nocaps)" {
     };
     key <AC09> {
         type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL_SEMIALPHABETIC",
+        type[group2]= "TWO_LEVEL",
         symbols[Group1]= [               l,               L ],
-        symbols[Group2]= [               l,               L,         Lstroke,         Lstroke ],
+        symbols[Group2]= [    Greek_lambda,    Greek_LAMBDA ],
         overlay1=<DOWN>
     };
     key <AC10> {
