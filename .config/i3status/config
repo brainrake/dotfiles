@@ -16,11 +16,11 @@ order += "disk /"
 #order += "ethernet eth0"
 order += "cpu_usages"
 order += "load"
-#order += "cpu_temperature 0"
+order += "cpu_temperature 0"
 order += "tztime utc"
 order += "time"
 
-wireless wlp3s0 {
+wireless wlp58s0 {
   format_up = " w %quality %ip %essid "
   format_down = " w down "
 }
@@ -54,7 +54,7 @@ load {
 
 cpu_temperature 0 {
   format = " %degrees°C "
-  path = "/sys/devices/platform/coretemp.0/temp1_input"
+  path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
 }
 
 disk "/" {

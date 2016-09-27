@@ -15,8 +15,8 @@
 !.config/
 !.config/doublecmd/
 !.config/doublecmd/doublecmd.xml
-!.config/i3/
-!.config/i3/config
+!.i3/
+!.i3/config
 !.config/i3status/
 !.config/i3status/config
 !.config/mpv/
@@ -34,6 +34,9 @@
 !.config/touchegg/touchegg.conf
 !.config/volumeicon
 !.config/volumeicon/volumeicon
+!.etc/
+!.nixos/
+!.nixos/configuration.nix
 !.npmrc
 !.themes/
 !.themes/solarized-dark-gtk
