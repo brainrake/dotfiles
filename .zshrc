@@ -70,6 +70,8 @@ PATH=$PATH:$HOME/.npm_global/bin
 PATH=$PATH:$HOME/.bin
 PATH=$PATH:$HOME/.local/bin
 
+export MC_SKIN=$HOME/.config/mc/solarized.ini
+
 # OPAM configuration
 . /home/ssdd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
