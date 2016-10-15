@@ -1,37 +1,23 @@
 { config, pkgs, ... }:
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [ ./hardware-configuration.nix ];
 
-  # nix.useSandbox = true;
+  nix.useSandbox = true;
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.luks.devices = [ { device = "/dev/nvme0n1p6"; name = "ct"; } ];
+  nixpkgs.config.allowUnfree = true;
 
-  fileSystems."/".device = "/dev/ct/root";
-  fileSystems."/".options = [ "defaults" "noatime" ];
-  fileSystems."/boot".device = "/dev/nvme0n1p1";
-  fileSystems."/w" = {
-    device = "/dev/nvme0n1p3";
-    options = [ "ro" "defaults" "umask=000" "noatime" ];
-    fsType = "ntfs-3g";
+  fileSystems."/home/ssdd/.nixos" = {
+    device = "/etc/nixos";
+    options = [ "defaults" "bind" ];
   };
 
-  fileSystems."/home/ssdd/.nixos".device = "/etc/nixos";
-  fileSystems."/home/ssdd/.nixos".options = [ "defaults" "bind" ];
-
-  virtualisation.virtualbox.host.enable = true;
+  # virtualisation.virtualbox.host.enable = true;
   virtualisation.docker.enable = true;
 
-  networking.hostName = "eki";
   networking.networkmanager.enable = true;
-  
+
   networking.firewall.enable = false;
-  
+
   hardware = {
     opengl = {
       driSupport32Bit = true;
@@ -44,12 +30,6 @@
     };
   };
   security.rtkit.enable = true;
-
-  i18n = {
-    consoleFont = "Lat2-Terminus16";
-    consoleKeyMap = "us";
-    defaultLocale = "en_US.UTF-8";
-  };
 
   powerManagement = {
     enable = true;
@@ -83,8 +63,20 @@
         url = "https://github.com/edwtjo/nixos-black-theme/archive/v1.0.tar.gz";
         sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
       };
+      # theme = pkgs.fetchurl {
+      #   url = "https://github.com/Hinidu/nixos-solarized-slim-theme/archive/1.2.tar.gz";
+      #   sha256 = "f8918f56e61d4b8f885a4dfbf1285aeac7d7e53a7458e32942a759fedfd95faf";
+      # };
+      defaultUser = "ssdd";
+      extraConfig = ''
+        welcome_msg
+        session_msg
+        intro_msg
+        username_msg
+        password_msg
+      '';
     };
-    videoDrivers = [ "intel" ];
+    videoDrivers = [ "intel" "virtualbox" ];
     enableCtrlAltBackspace = true;
     synaptics = {
       enable = true;
@@ -102,7 +94,7 @@
   fonts = {
     enableFontDir = true;
     fonts = with pkgs; [
-      terminus_font ubuntu_font_family
+      corefonts terminus_font ubuntu_font_family
     ];
   };
 
@@ -113,6 +105,7 @@
     uid = 1000;
     extraGroups = [ "wheel" "networkmanager" "vboxusers" "docker"];
     shell = "/run/current-system/sw/bin/zsh";
+    hashedPassword = "$6$vHDzt8VRh2O$zAvDGW.itwlXb0OSapkkVQz3E9Ddn0/.0XljeNRB2vxSKNUxpy6GXrsBSyUucLyNq2FCW9KuvV9ViE5YFP8gs0";
   };
 
   # The NixOS release to be compatible with for stateful data such as databases.

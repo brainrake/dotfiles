@@ -20,6 +20,7 @@
 	"auto_match_enabled": true,
 	"binary_file_patterns":
 	[
+		"*.js",
 		"*.jpg",
 		"*.jpeg",
 		"*.png",
@@ -74,7 +75,9 @@
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		"node_modules",
+		"bower_components"
 	],
 	"font_face": "Terminus",
 	"font_options":

@@ -34,9 +34,11 @@
 !.config/touchegg/touchegg.conf
 !.config/volumeicon
 !.config/volumeicon/volumeicon
-!.etc/
 !.nixos/
-!.nixos/configuration.nix
+!.nixos/vm.nix
+!.nixos/laptop.nix
+!.nixos/common.nix
+!.nixos/README.md
 !.npmrc
 !.themes/
 !.themes/solarized-dark-gtk
