@@ -3,7 +3,7 @@ card=default
 
 [Notification]
 show_notification=false
-notification_type=1
+notification_type=0
 
 [StatusIcon]
 stepsize=5
@@ -19,7 +19,7 @@ use_transparent_background=false
 [Hotkeys]
 up_enabled=true
 down_enabled=true
-mute_enabled=true
+mute_enabled=false
 up=XF86AudioRaiseVolume
 down=XF86AudioLowerVolume
 mute=XF86AudioMute
