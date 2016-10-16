@@ -16,4 +16,6 @@
   };
 
   networking.hostName = "eki";
+
+  services.xserver.videoDrivers = [ "intel" ];
 }

@@ -76,7 +76,6 @@
         password_msg
       '';
     };
-    videoDrivers = [ "intel" "virtualbox" ];
     enableCtrlAltBackspace = true;
     synaptics = {
       enable = true;
