@@ -17,7 +17,7 @@
         git gcc racket elmPackages.elm nix-repl direnv meld file graphviz imagemagick
         haskellPackages.purescript haskellPackages.idris
         nodejs nodePackages.coffee-script
-        iputils bind nmap mtr iptraf gnupg mkpasswd terraform  # urbit
+        iputils bind nmap mtr iptraf wget gnupg mkpasswd terraform  # urbit
         nox bc mc htop psmisc pciutils lm_sensors
       ];
     };
