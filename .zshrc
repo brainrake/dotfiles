@@ -83,3 +83,5 @@ export MC_SKIN=$HOME/.config/mc/solarized.ini
 #fi
 
 #PATH=$PATH:$HOME/.npm_global/bin:node_modules/.bin
+
+eval "$(direnv hook zsh)"
