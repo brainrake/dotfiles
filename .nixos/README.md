@@ -1,5 +1,1 @@
-Just import one of the configurations in `configuration.nix`, e.g.
-
-```
-{ imports = [ ./vm.nix ]; }
-```
+Import one of the configurations in `configuration.nix`. See [configuration.nix.example](configuration.nix.example)

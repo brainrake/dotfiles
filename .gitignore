@@ -35,10 +35,11 @@
 !.config/volumeicon
 !.config/volumeicon/volumeicon
 !.nixos/
-!.nixos/vm.nix
-!.nixos/laptop.nix
-!.nixos/common.nix
 !.nixos/README.md
+!.nixos/configuration.nix.example
+!.nixos/common.nix
+!.nixos/laptop.nix
+!.nixos/vm.nix
 !.npmrc
 !.themes/
 !.themes/solarized-dark-gtk
