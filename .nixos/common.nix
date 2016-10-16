@@ -43,9 +43,13 @@
   services.avahi = {
     enable = true;
     nssmdns = true;
+    ipv6 = true;
     publish.enable = true;
     publish.domain = true;
+    publish.workstation = true;
+    publish.hinfo = true;
     publish.addresses = true;
+    publish.userServices = true;
   };
 
   services.openssh.enable = true;
