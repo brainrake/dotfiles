@@ -38,9 +38,7 @@
 
   time.timeZone = "Europe/Budapest";
 
-  # environment.systemPackages = with pkgs; [
-  #   wget
-  # ];
+  environment.systemPackages = with pkgs; [ gparted rfkill powertop ];
 
   services.avahi = {
     enable = true;
