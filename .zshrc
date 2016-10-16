@@ -1,5 +1,3 @@
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
-
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
