@@ -17,3 +17,7 @@
 	ff = false
 [branch]
 	autosetuprebase = always
+[filter "xz"]
+  clean = xz
+  smudge = unxz
+  required
