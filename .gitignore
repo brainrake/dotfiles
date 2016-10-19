@@ -12,11 +12,16 @@
 !.atom/keymap.cson
 !.atom/packages.cson
 !.atom/styles.less
-!.config/
-!.config/doublecmd/
-!.config/doublecmd/doublecmd.xml
 !.i3/
 !.i3/config
+!.config/
+!.config/chromium/
+!.config/chromium/Default/
+!.config/chromium/Default/IndexedDB/
+!.config/chromium/Default/IndexedDB/chrome-extension_fjnbnpbmkenffdnngjfgmeleoegfcffe_0.indexeddb.leveldb
+!.config/chromium/Default/IndexedDB/chrome-extension_fjnbnpbmkenffdnngjfgmeleoegfcffe_0.indexeddb.leveldb/000003.log
+!.config/doublecmd/
+!.config/doublecmd/doublecmd.xml
 !.config/i3status/
 !.config/i3status/config
 !.config/mpv/
@@ -34,6 +39,7 @@
 !.config/touchegg/touchegg.conf
 !.config/volumeicon
 !.config/volumeicon/volumeicon
+!.gitattributes
 !.nixos/
 !.nixos/README.md
 !.nixos/configuration.nix.example
