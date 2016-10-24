@@ -52,7 +52,23 @@
     publish.userServices = true;
   };
 
+  services.tinc.networks.eket = {
+    extraConfig = ''
+      ConnectTo = eket
+    '';
+    chroot = false;
+    debugLevel = 5;
+    hosts.eket = ''
+      Name = eket
+      Address = eket.su
+      Subnet = 192.168.2.0/24
+      Ed25519PublicKey = MPet69vKLZO8YF52EnZYfk7r4dZnn9TW4tJr/u8tKFP
+      PublicKey = MIICCgKCAgEA0pYJS4Spdpp1qJL5B0dKSqdtUFBR3AChEbGKZAClw29dLgdGWNRYaPFizJD4z3TjPzT46VGnQPKCPFfGdT9ItwXs+IXLxbeQIFXDl72wgJLD1dzsClZSlw7wINYwARU9auHJYuI7nh0ELOsoBq8przB1k2MONJMvMvVCh037h5HlP90BUwenvmJJVYq+a3jmkvGrkAzDKoBVk2v3Zl8bSqCeGzWDNvrds48zaTo6KFcuJiJnlVpLNROghI/FP4V6USqtmQRA2q1E/xxDxAN3FRqe9DkA2KKziqiihj+LoK4iS+Eq7Mjt8BCFf2Ax1+bC4IupkR/nOYGxaWpnpIiUaX+ozAxLXuKHtFxbkO0ez/dH/DiPUNnHTQzwYcuAm0YzYFnSvmpJmQqT6xZm7DiFbqa/y2I7xuOpqaJxC/lDed0Me4nYrVJzQIeYW0M5F/eee3dpnMKzBH2BJKs7nBYqQ42nfd5WMiRzWZVJMEOewCvywiBBEgwlhXWQjBZp4ZJnOD775qfcVSOO3REacPCAwTHlftxmgiu1nh/BQSPzf8luLM4l183kBSMw3KmbSri0H5WRXkLBt4D4HupwYQpjd5vnNbhcaLx+tPvto1oEjKx7vYP/lw5xwxNDWz7TBHT3wJ8vpomSKyuSwwb4a/UtzCIYI5OZ7/C/AGgz5nT+jHUCAwEAAQ==
+    '';
+  };
+
   services.openssh.enable = true;
+  services.openssh.forwardX11 = true;
   services.printing.enable = true;
 
   services.xserver = {
