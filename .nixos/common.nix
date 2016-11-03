@@ -100,10 +100,12 @@
       twoFingerScroll = true;
       vertEdgeScroll = false;
       palmDetect = true;
+      accelFactor = "0.1"
       additionalOptions = ''
         Option "VertScrollDelta" "-27"
         Option "HorizScrollDelta" "-27"
-        Option "AccelFactor" "0.1"
+        Option "SingleTapTimeout" "30"
+        Option "MaxTapTime "100"
       '';
     };
   };
