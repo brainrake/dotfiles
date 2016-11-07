@@ -125,7 +125,6 @@
     uid = 1000;
     extraGroups = [ "wheel" "networkmanager" "vboxusers" "docker" "dialout" ];
     shell = "/run/current-system/sw/bin/zsh";
-    hashedPassword = "$6$vHDzt8VRh2O$zAvDGW.itwlXb0OSapkkVQz3E9Ddn0/.0XljeNRB2vxSKNUxpy6GXrsBSyUucLyNq2FCW9KuvV9ViE5YFP8gs0";
   };
 
   # The NixOS release to be compatible with for stateful data such as databases.
