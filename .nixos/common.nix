@@ -99,7 +99,7 @@
   fonts = {
     enableFontDir = true;
     fonts = with pkgs; [
-      corefonts terminus_font ubuntu_font_family
+      corefonts terminus_font ubuntu_font_family hasklig
     ];
   };
 
