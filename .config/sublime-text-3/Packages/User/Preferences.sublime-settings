@@ -85,7 +85,7 @@
 	[
 		"no_antialias"
 	],
-	"font_size": 21,
+	"font_size": 30,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":

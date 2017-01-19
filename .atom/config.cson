@@ -1,10 +1,13 @@
 "*":
+  "atom-pair": {}
   "atom-typescript": {}
   "autocomplete-plus":
     confirmCompletion: "tab"
     includeCompletionsFromAllBuffers: false
   autosave:
     enabled: true
+  "command-palette":
+    preserveLastSearch: true
   core:
     autoHideMenuBar: true
     destroyEmptyPanes: false
@@ -12,29 +15,57 @@
       "metrics"
       "linter-pylint"
       "spell-check"
-      "tabs"
-      "language-idris"
+      "ide-purescript"
+      "hasklig"
     ]
     projectHome: "/home/ssdd/dev"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
+  "document-outline": {}
   editor:
     autoIndentOnPaste: false
-    fontFamily: "Mono"
-    fontSize: 19
+    fontFamily: "Firacode"
+    fontSize: 22
     invisibles: {}
+    showIndentGuide: true
+    tabLength: 4
+  "elm-format":
+    binary: "elm-format"
+    formatOnSave: false
+  elmjutsu:
+    autocompleteEnabled: true
+    autocompleteSnippetsEnabled: true
+    cacheDirectory: "/tmp/elmjutsu11101KCL5RLxq3al9"
+    hyperclickEnabled: true
   "exception-reporting":
     userId: "59362366-325f-a88f-954d-6375e359219a"
+  firacode:
+    enabledScopes: [
+      "source.haskell"
+      "source.purescript"
+      "source.elm"
+      "source.idris"
+    ]
+    firacodeWeight: "regular"
   fonts:
     fontFamily: "Bitstream Vera Sans Mono"
+  hidpi:
+    scaleFactor: 1.5
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
   "ide-purescript": {}
   "language-elm": {}
   "language-idris": {}
   linter:
     showErrorPanel: false
     showErrorTabProject: false
+  "linter-elm-make": {}
+  "outline-selection":
+    outlineOpacity: 0.5
+    outlineRadius: 4
   pigments: {}
   "spell-check": {}
   susave:
