@@ -1,8 +1,8 @@
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt appendhistory HIST_IGNORE_DUPS HIST_IGNORE_SPACE AUTO_CD EXTENDED_GLOB MULTIOS CORRECT nohup auto_resume nomatch notify
-unsetopt beep
+unsetopt beep share_history
 
 autoload -U compinit
 compinit
@@ -15,6 +15,8 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;32'
 autoload -U promptinit
 promptinit
 prompt adam2 8bit `uname -ni | sha1sum | cut -c 3` 14 7
+[[ -v IN_NIX_SHELL ]] && prompt_nixshell="%B%F{$prompt_adam2_color3} nix-shell  "
+prompt_line_1a="$prompt_gfx_tbox$prompt_l_paren${prompt_nixshell}%B%F{$prompt_adam2_color2}%~$prompt_r_paren%b%F{$prompt_adam2_color1}"
 
 #prompt adam2 8bit `uname -ni | sha1sum | cut -c 3` black black black magenta
 #prompt_char="%(!.#.%B%F{black}>)"
@@ -56,7 +58,11 @@ alias s.='sublime -n --command toggle_menu -a . README*(N)'
 
 alias t='setsid urxvt -cd $PWD'
 
-nix(){ nix-env -qa \* -P -f '<nixpkgs>' | grep -i "$1"; }
+alias n='nix-shell --command zsh'
+alias nr='nix-shell --command zsh --run "$1"'
+
+nix(){ nix-env -qaP \* -f '<nixpkgs>' | grep -i "$1"; }
+nixh(){ nix-env  -qaP -f '<nixpkgs>' -A haskellPackages | grep -i "$1"; }
 
 [[ -x `command -v keychain` ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 #envoy -t gpg-agent
@@ -64,26 +70,12 @@ nix(){ nix-env -qa \* -P -f '<nixpkgs>' | grep -i "$1"; }
 
 [[ -x `command -v dircolors` ]] && [[ -e .dircolors ]] && eval `dircolors .dircolors`
 
-PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
-PATH=$PATH:$HOME/.cabal/bin
-PATH=$PATH:$HOME/.npm_global/bin
-PATH=$PATH:$HOME/.bin
-PATH=$PATH:$HOME/.local/bin
-
 export MC_SKIN=$HOME/.config/mc/solarized.ini
 
-# OPAM configuration
-. /home/ssdd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-#if test -r "${NIX_PROFILE:-$HOME/.nix-profile}/etc/profile.d/nix.sh"; then
-#    . "${NIX_PROFILE:-$HOME/.nix-profile}/etc/profile.d/nix.sh"
-#elif test -r "${NIX_STATE_DIR:-/nix/var/nix}/profiles/default/etc/profile.d/nix.sh"; then
-#    . "${NIX_STATE_DIR:-/nix/var/nix}/profiles/default/etc/profile.d/nix.sh"
-#fi
-#if type nix-env > /dev/null; then
-#    export LOCALE_ARCHIVE=`nix-env --installed --no-name --out-path --query glibc-locales`/lib/locale/locale-archive
-#fi
-
-PATH=$PATH:$HOME/.npm_global/bin:node_modules/.bin
-
 eval "$(direnv hook zsh)"
+
+PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
+PATH=$PATH:$HOME/.cabal/bin
+PATH=$PATH:$HOME/.npm_global/bin:node_modules/.bin
+PATH=$PATH:$HOME/.bin
+PATH=$PATH:$HOME/.local/bin
