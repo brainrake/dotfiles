@@ -82,6 +82,9 @@ URxvt.keysym.C-minus:   perl:font-size:decrease
 
 !!!! Solarized
 
+#define hack_color #000000
+*color8: hack_color
+
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
@@ -111,7 +114,7 @@ URxvt.keysym.C-minus:   perl:font-size:decrease
 
 !! black dark/light
 *color0:                S_base02
-*color8:                S_base03
+!*color8:                S_base03
 
 !! red dark/light
 *color1:                S_red
