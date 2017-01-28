@@ -15,11 +15,6 @@
 !.i3/
 !.i3/config
 !.config/
-!.config/chromium/
-!.config/chromium/Default/
-!.config/chromium/Default/IndexedDB/
-!.config/chromium/Default/IndexedDB/chrome-extension_fjnbnpbmkenffdnngjfgmeleoegfcffe_0.indexeddb.leveldb
-!.config/chromium/Default/IndexedDB/chrome-extension_fjnbnpbmkenffdnngjfgmeleoegfcffe_0.indexeddb.leveldb/000003.log
 !.config/doublecmd/
 !.config/doublecmd/doublecmd.xml
 !.config/i3status/
