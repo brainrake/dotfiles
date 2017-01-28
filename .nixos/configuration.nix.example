@@ -1,4 +1,6 @@
 {
   imports = [ ./vm.nix ];
+  # imports = [ ./desktop.nix ];
+  # imports = [ ./laptop.nix ];
   nixpkgs.config.allowUnfree = true;
 }

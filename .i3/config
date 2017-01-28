@@ -1,5 +1,5 @@
 exec "export QT_STYLE_OVERRIDE=gtk"
-exec "volumeicon"
+#exec "volumeicon"
 exec "xrdb .Xresources"
 exec "xkbcomp .xkb $DISPLAY"
 exec "xset r rate 250 30"

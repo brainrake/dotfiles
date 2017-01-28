@@ -2,6 +2,8 @@
 {
   imports = [ ./hardware-configuration.nix ];
 
+  boot.earlyVconsoleSetup = true;
+
   nix.useSandbox = true;
 
   nixpkgs.config.allowUnfree = true;
@@ -38,7 +40,15 @@
 
   time.timeZone = "Europe/Budapest";
 
-  environment.systemPackages = with pkgs; [ gparted rfkill powertop ];
+  environment.systemPackages = with pkgs; [
+    gparted rfkill powertop
+    i3 i3status i3lock dmenu rxvt_unicode
+  ];
+
+  sound.mediaKeys = {
+    enable = true;
+    volumeStep = "3%";
+  };
 
   services.avahi = {
     enable = true;
@@ -59,6 +69,7 @@
   services.xserver = {
     enable = true;
     layout = "us";
+    videoDrivers = [ "nvidia" "intel" "vesa" "vmware" "modesetting" ];
     windowManager.i3.enable = true;
     displayManager.slim = {
       enable = true;
@@ -91,16 +102,14 @@
         Option "HorizScrollDelta" "-27"
         Option "SingleTapTimeout" "30"
         Option "MaxTapTime" "100"
-        Option "SingleTapTimeout" "30"
+        Option "SingleTapTimeout" "100"
       '';
     };
   };
 
   fonts = {
     enableFontDir = true;
-    fonts = with pkgs; [
-      corefonts terminus_font ubuntu_font_family hasklig
-    ];
+    fonts = with pkgs; [ corefonts terminus_font ubuntu_font_family hasklig ];
   };
 
   programs.zsh.enable = true;
