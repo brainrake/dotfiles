@@ -55,6 +55,7 @@ alias @='sudo '
 alias ta='textadept-curses'
 alias s='sublime -n --command toggle_menu'
 alias s.='sublime -n --command toggle_menu -a . README*(N)'
+alias g='git'
 
 alias t='setsid urxvt -cd $PWD'
 
