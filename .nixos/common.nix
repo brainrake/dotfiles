@@ -3,6 +3,7 @@
   imports = [ ./hardware-configuration.nix ];
 
   boot.earlyVconsoleSetup = true;
+  boot.kernelParams = [ "systemd.legacy_systemd_cgroup_controller=yes" ];
 
   nix.useSandbox = true;
 
@@ -21,9 +22,10 @@
   networking.firewall.enable = false;
 
   hardware = {
-    opengl = {
+    opengl = rec {
       driSupport32Bit = true;
-      extraPackages = [ pkgs.vaapiIntel ] ;
+      extraPackages = with pkgs; [ vaapiIntel libvdpau-va-gl vaapiVdpau ] ;
+      extraPackages32 = extraPackages;
     };
     bluetooth.enable = true;
     pulseaudio = {
@@ -69,7 +71,6 @@
   services.xserver = {
     enable = true;
     layout = "us";
-    videoDrivers = [ "nvidia" "intel" "vesa" "vmware" "modesetting" ];
     windowManager.i3.enable = true;
     displayManager.slim = {
       enable = true;

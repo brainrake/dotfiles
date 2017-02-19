@@ -15,5 +15,7 @@
     fsType = "ntfs-3g";
   };
 
+  services.xserver.videoDrivers = [ "intel" ];
+
   networking.hostName = "eki";
 }
