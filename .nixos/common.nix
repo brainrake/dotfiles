@@ -47,11 +47,6 @@
     i3 i3status i3lock dmenu rxvt_unicode
   ];
 
-  sound.mediaKeys = {
-    enable = true;
-    volumeStep = "3%";
-  };
-
   services.avahi = {
     enable = true;
     nssmdns = true;

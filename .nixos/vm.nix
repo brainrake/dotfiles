@@ -8,4 +8,8 @@
 
   networking.hostName = "nixbox";
   boot.initrd.checkJournalingFS = false;
+
+  services.xserver.videoDrivers = [ "virtualbox" ];
+
+  virtualisation.virtualbox.guest.enable = true;
 }
