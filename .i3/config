@@ -28,6 +28,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 15
 bindsym XF86Sleep exec /home/ssdd/.bin/lock
 
 set $mod Mod4
+#set $mod Mod1
 
 new_window 1pixel
 
@@ -77,10 +78,10 @@ bindsym $mod+minus unmark aot;
 bindsym $mod+grave workspace back_and_forth; [con_mark="aot"] move workspace current; [con_mark="aot"] focus tiling;
 
 # switch to prev/next workspace on current output
-bindsym $mod+Mod1+Right workspace next_on_output
-bindsym $mod+Mod1+Left workspace prev_on_output
-bindsym $mod+Mod1+Shift+Right move workspace next_on_output; workspace next_on_output;
-bindsym $mod+Mod1+Shift+Left move workspace prev_on_output; workspace prev_ou_output;
+#bindsym $mod+Mod1+Right workspace next_on_output
+#bindsym $mod+Mod1+Left workspace prev_on_output
+#bindsym $mod+Mod1+Shift+Right move workspace next_on_output; workspace next_on_output;
+#bindsym $mod+Mod1+Shift+Left move workspace prev_on_output; workspace prev_ou_output;
 
 # switch to pairs of workspaces
 bindsym $mod+Control+1 workspace 2; workspace 1; [con_mark="aot"] move workspace current; focus tiling;
