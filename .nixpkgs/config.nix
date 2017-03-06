@@ -12,8 +12,10 @@
       paths = [ my_desktop ] ++ (with pkgs; [
         gnome3.seahorse
         google-chrome firefox
-        git gcc racket elmPackages.elm nix-repl direnv meld file graphviz imagemagick
-        haskellPackages.purescript haskellPackages.idris
+        git gcc racket nix-repl direnv meld file graphviz imagemagick
+        elmPackages.elm
+        haskellPackages.idris
+        #haskellPackages.purescript
         nodejs nodePackages.coffee-script
         sublime3 textadept atom
         mixxx
