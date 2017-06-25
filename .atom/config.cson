@@ -17,6 +17,7 @@
       "spell-check"
       "ide-purescript"
       "hasklig"
+      "firacode"
     ]
     projectHome: "/home/ssdd/dev"
     telemetryConsent: "no"
@@ -27,8 +28,8 @@
   "document-outline": {}
   editor:
     autoIndentOnPaste: false
-    fontFamily: "Firacode"
-    fontSize: 22
+    fontFamily: "Fira Sans"
+    fontSize: 23
     invisibles: {}
     showIndentGuide: true
     tabLength: 4
@@ -50,6 +51,7 @@
       "source.idris"
     ]
     firacodeWeight: "regular"
+    fontWeight: "regular"
   fonts:
     fontFamily: "Bitstream Vera Sans Mono"
   hidpi:
@@ -59,9 +61,7 @@
   "ide-purescript": {}
   "language-elm": {}
   "language-idris": {}
-  linter:
-    showErrorPanel: false
-    showErrorTabProject: false
+  linter: {}
   "linter-elm-make": {}
   "outline-selection":
     outlineOpacity: 0.5
