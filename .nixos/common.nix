@@ -107,7 +107,8 @@
 
   fonts = {
     enableFontDir = true;
-    fonts = with pkgs; [ corefonts terminus_font ubuntu_font_family hasklig ];
+    fonts = with pkgs; [ corefonts terminus_font terminus_font_ttf ubuntu_font_family hasklig mononoki fira fira-code fira-code-symbols fira-mono source-sans-pro 
+source-serif-pro source-code-pro ];
   };
 
   programs.zsh.enable = true;
