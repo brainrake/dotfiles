@@ -18,9 +18,13 @@ bindsym $mod+u exec "xkbcomp .xkb $DISPLAY; xset r rate 250 30"
 # start a terminal
 bindsym $mod+Return exec urxvt
 
-bindsym $mod+Shift+i exec xrandr --output HDMI1 --off --output eDP1 --mode 1920x1080 --pos 0x0
-bindsym $mod+Shift+o exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --mode 1920x1080 --pos 0x1080
-bindsym $mod+Shift+p exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --off --pos 0x1080
+bindsym $mod+Shift+i exec xrandr --output eDP1 --primary --mode 3200x1800 --pos 0x0 --rotate normal --output DP1 --off
+bindsym $mod+Shift+o exec xrandr --output eDP1 --primary --mode 3200x1800 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 3200x0 --rotate normal
+
+
+# bindsym $mod+Shift+i exec xrandr --output HDMI1 --off --output eDP1 --mode 1920x1080 --pos 0x0
+# bindsym $mod+Shift+o exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --mode 1920x1080 --pos 0x1080
+# bindsym $mod+Shift+p exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output eDP1 --off --pos 0x1080
 
 bindsym XF86MonBrightnessUp exec xbacklight -inc 15
 bindsym XF86MonBrightnessDown exec xbacklight -dec 15
