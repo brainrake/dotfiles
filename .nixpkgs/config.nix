@@ -2,6 +2,8 @@
   allowUnfree = true;
   chromium.enablePepperFlash = true;
   chromium.enablePepperPDF = true;
+  # firefox.enableGoogleTalkPlugin = true;
+  firefox.enableAdobeFlash = true;
   packageOverrides = pkgs: rec {
     my_ = pkgs.buildEnv {
       name = "my_";
@@ -11,7 +13,8 @@
       name = "my_dev";
       paths = [ my_desktop ] ++ (with pkgs; [
         gnome3.seahorse
-        google-chrome firefox
+        google-chrome
+        firefox
         git gcc racket nix-repl direnv meld file graphviz imagemagick
         elmPackages.elm
         haskellPackages.idris
@@ -20,7 +23,6 @@
         sublime3 textadept atom
         mixxx
         gimp
-        terraform
         urbit
       ]);
     };
