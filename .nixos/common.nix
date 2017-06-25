@@ -14,7 +14,9 @@
     options = [ "defaults" "bind" ];
   };
 
-  # virtualisation.virtualbox.host.enable = true;
+  zramSwap.enable = true;
+
+  virtualisation.virtualbox.host.enable = true;
   virtualisation.docker.enable = true;
 
   networking.networkmanager.enable = true;
