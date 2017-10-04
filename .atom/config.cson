@@ -18,24 +18,29 @@
       "ide-purescript"
       "hasklig"
       "firacode"
+      "elm-navigator"
+      "elastic-tabstops"
+      "tabs"
     ]
     projectHome: "/home/ssdd/dev"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "solarized-dark-syntax"
+      "atom-dark-syntax"
     ]
   "document-outline": {}
   editor:
     autoIndentOnPaste: false
     fontFamily: "Fira Sans"
-    fontSize: 23
+    fontSize: 24
     invisibles: {}
-    showIndentGuide: true
+    lineHeight: 1.2
+    scrollPastEnd: true
     tabLength: 4
+    zoomFontWhenCtrlScrolling: false
   "elm-format":
     binary: "elm-format"
-    formatOnSave: false
+    showErrorNotifications: false
   elmjutsu:
     autocompleteEnabled: true
     autocompleteSnippetsEnabled: true
@@ -59,22 +64,49 @@
   "highlight-selected":
     hideHighlightOnSelectedWord: true
   "ide-purescript": {}
-  "language-elm": {}
-  "language-idris": {}
-  linter: {}
-  "linter-elm-make": {}
+  "language-elm":
+    autocompleteEnabled: false
+  "language-idris":
+    panelFontSize: 20
+  linter:
+    disabledProviders: [
+      "linter-mypy"
+    ]
+  "linter-elm-make":
+    lintOnTheFly: true
+  "linter-mypy":
+    executablePath: "/home/ssdd/dev/$PROJECT_NAME/.venv/bin/python"
+  "linter-ui-default":
+    panelHeight: 99.33333587646484
+    showPanel: true
+  minimap:
+    absoluteMode: true
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": false
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
   "outline-selection":
     outlineOpacity: 0.5
     outlineRadius: 4
   pigments: {}
+  "python-tools": {}
   "spell-check": {}
+  "status-bar": {}
   susave:
     tryDefaultSave: false
   tabs:
     alwaysShowTabBar: false
     enableVcsColoring: true
   "tree-view":
-    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
