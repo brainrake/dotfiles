@@ -20,7 +20,6 @@
 	"auto_match_enabled": true,
 	"binary_file_patterns":
 	[
-		"*.js",
 		"*.jpg",
 		"*.jpeg",
 		"*.png",
@@ -40,8 +39,8 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 1,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/User/my.tmTheme",
-	"draw_indent_guides": true,
+	"color_scheme": "Packages/User/SublimeLinter/base16-ashes (SL).tmTheme",
+	"draw_indent_guides": false,
 	"draw_minimap_border": true,
 	"enable_tab_scrolling": true,
 	"enable_telemetry": "false",
@@ -72,24 +71,27 @@
 	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
+		"result",
 		".terraform/modules",
 		".svn",
 		".git",
 		".hg",
 		"CVS",
+		"elm-stuff",
 		"node_modules",
 		"bower_components"
 	],
-	"font_face": "Terminus",
+	"font_face": "Fira Sans Light",
 	"font_options":
 	[
-		"no_antialias"
+		"//no_antialias"
 	],
-	"font_size": 30,
+	"font_size": 17,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Package Control",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -103,6 +105,7 @@
 		"*.log"
 	],
 	"index_files": true,
+	"line_numbers": true,
 	"margin": 1,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
