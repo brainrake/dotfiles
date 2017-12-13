@@ -41,8 +41,16 @@
       name = "my_tools";
       paths = with pkgs; [
         iputils bind nmap mtr iptraf wget gnupg mkpasswd
-        nox bc mc htop psmisc pciutils lm_sensors
+        nox bc mc mc-solarized htop psmisc pciutils lm_sensors
       ];
     };
+    mc-solarized = pkgs.writeTextFile {
+        name = "mc-solarized";
+        destination = "share/mc-solarized/solarized.ini";
+        text =pkgs.fetchurl {
+          url = "https://raw.githubusercontent.com/peel/mc/05009685f34c48e0da58662214253c31c1620d47/solarized.ini";
+          sha256 = "13p2flyn0i1c88xkycy2rk24d51can8ff31gh3c6djni3p981waq";
+        };
+      };
   };
 }

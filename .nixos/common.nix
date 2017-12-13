@@ -4,6 +4,7 @@
 
   boot.earlyVconsoleSetup = true;
   boot.kernelParams = [ "systemd.legacy_systemd_cgroup_controller=yes" ];
+  boot.supportedFilesystems = [ "ext" "exfat" "vfat" "ntfs" "xfs" ];
 
   nix.useSandbox = true;
 
@@ -18,6 +19,8 @@
 
   virtualisation.virtualbox.host.enable = true;
   virtualisation.docker.enable = true;
+  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd.enableKVM = true;
 
   networking.networkmanager.enable = true;
 
@@ -39,7 +42,7 @@
 
   powerManagement = {
     enable = true;
-    cpuFreqGovernor = "powersave";
+    # cpuFreqGovernor = "powersave";
   };
 
   time.timeZone = "Europe/Budapest";
@@ -107,8 +110,7 @@
 
   fonts = {
     enableFontDir = true;
-    fonts = with pkgs; [ corefonts terminus_font terminus_font_ttf ubuntu_font_family hasklig mononoki fira fira-code fira-code-symbols fira-mono source-sans-pro 
-source-serif-pro source-code-pro ];
+    fonts = with pkgs; [ corefonts terminus_font terminus_font_ttf ubuntu_font_family carlito hasklig mononoki fira fira-code fira-code-symbols fira-mono source-sans-pro source-serif-pro source-code-pro noto-fonts noto-fonts-cjk noto-fonts-emoji ];
   };
 
   programs.zsh.enable = true;
@@ -116,7 +118,7 @@ source-serif-pro source-code-pro ];
   users.extraUsers.ssdd = {
     isNormalUser = true;
     uid = 1000;
-    extraGroups = [ "wheel" "networkmanager" "vboxusers" "docker" "dialout" ];
+    extraGroups = [ "wheel" "networkmanager" "vboxusers" "docker" "dialout" "audio" ];
     shell = "/run/current-system/sw/bin/zsh";
   };
 

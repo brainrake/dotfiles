@@ -1,7 +1,18 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 {
-  imports = [ ./common.nix ];
+  imports = [./common.nix ]; # ./musnix ];
 
+  # musnix = {
+  #   enable = false; # true;
+  #   soundcardPciId = "00:1f.3";
+  #   kernel = {
+  #     optimize = true;
+  #     realtime = true;
+  #     latencytop = true;
+  #   };
+  #   rtirq.enable = true;
+  # };
+  
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.initrd.luks.devices = [ { device = "/dev/nvme0n1p6"; name = "ct"; } ];
