@@ -4,6 +4,7 @@
   chromium.enablePepperPDF = true;
   # firefox.enableGoogleTalkPlugin = true;
   firefox.enableAdobeFlash = true;
+  firefox.enableEsteid = true;
   packageOverrides = pkgs: rec {
     my_ = pkgs.buildEnv {
       name = "my_";
@@ -17,7 +18,7 @@
         firefox
         git gcc racket nix-repl direnv meld file graphviz imagemagick
         elmPackages.elm
-        haskellPackages.idris
+        # haskellPackages.idris
         #haskellPackages.purescript
         nodejs nodePackages.coffee-script
         sublime3 textadept atom
@@ -35,6 +36,7 @@
         rxvt_unicode feh geeqie scrot arandr lxappearance mpv pcmanfm gcolor2 evince paprefs pavucontrol
         transmission_gtk
         pidgin pidginotr pidginlatex purple-hangouts purple-plugin-pack toxprpl
+        qesteidutil qdigidoc
       ]);
     };
     my_tools = pkgs.buildEnv {
@@ -46,7 +48,7 @@
     };
     mc-solarized = pkgs.writeTextFile {
         name = "mc-solarized";
-        destination = "share/mc-solarized/solarized.ini";
+        destination = "/share/mc-solarized/solarized.ini";
         text =pkgs.fetchurl {
           url = "https://raw.githubusercontent.com/peel/mc/05009685f34c48e0da58662214253c31c1620d47/solarized.ini";
           sha256 = "13p2flyn0i1c88xkycy2rk24d51can8ff31gh3c6djni3p981waq";
