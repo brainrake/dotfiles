@@ -18,10 +18,6 @@
   zramSwap.enable = true;
   zramSwap.memoryPercent = 25;
  
-  # virtualisation.virtualbox.host.enable = true;
-  # virtualisation.docker.enable = true;
-  # virtualisation.libvirtd.enable = true;
-
   networking.networkmanager.enable = true;
 
   networking.firewall.enable = false;
