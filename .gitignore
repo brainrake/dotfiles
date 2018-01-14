@@ -35,14 +35,15 @@
 !/.config/volumeicon
 !/.config/volumeicon/volumeicon
 !/.gitattributes
+!/.nixos
 !/.nixos/
 !/.nixos/README.md
 !/.nixos/configuration.nix.example
 !/.nixos/common.nix
 !/.nixos/laptop.nix
 !/.nixos/desktop.nix
-!/.nixos
 !/.nixos/vm.nix
+!/.nixos/calculon.nix
 !/.npmrc
 !/.themes/
 !/.themes/solarized-dark-gtk
