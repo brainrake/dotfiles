@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-  imports = [./common.nix ]; # ./musnix ];
+  imports = [./common.nix ./graphical.nix ]; # ./musnix ];
 
   # musnix = {
   #   enable = false; # true;
@@ -26,7 +26,7 @@
     fsType = "ntfs-3g";
   };
 
-  services.xserver.videoDrivers = [ "intel" ];
+  services.xserver.videoDrivers = [ "intel" "nvidia" ];
 
   networking.hostName = "eki";
 }

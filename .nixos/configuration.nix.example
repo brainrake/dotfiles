@@ -1,6 +1,9 @@
 {
-  imports = [ ./vm.nix ];
+  ### uncomment one of these:
+  # imports = [ ./vm.nix ];
   # imports = [ ./desktop.nix ];
   # imports = [ ./laptop.nix ];
+  # imports = [ ./calculon.nix ];
+
   nixpkgs.config.allowUnfree = true;
 }
