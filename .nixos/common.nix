@@ -17,10 +17,10 @@
 
   zramSwap.enable = true;
   zramSwap.memoryPercent = 25;
-
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.docker.enable = true;
-  virtualisation.libvirtd.enable = true;
+ 
+  # virtualisation.virtualbox.host.enable = true;
+  # virtualisation.docker.enable = true;
+  # virtualisation.libvirtd.enable = true;
 
   networking.networkmanager.enable = true;
 
@@ -30,7 +30,7 @@
 
   powerManagement = {
     enable = true;
-    cpuFreqGovernor = "powersave";
+    # cpuFreqGovernor = "powersave";
   };
 
   time.timeZone = "Europe/Budapest";
