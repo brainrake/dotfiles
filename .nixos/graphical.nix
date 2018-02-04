@@ -4,6 +4,8 @@
   virtualisation.docker.enable = true;
   virtualisation.libvirtd.enable = true;
 
+  networking.networkmanager.enable = true;
+
   hardware = {
     opengl = rec {
       driSupport32Bit = true;

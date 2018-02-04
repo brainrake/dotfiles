@@ -18,8 +18,6 @@
   zramSwap.enable = true;
   zramSwap.memoryPercent = 25;
  
-  networking.networkmanager.enable = true;
-
   networking.firewall.enable = false;
 
   security.rtkit.enable = true;
