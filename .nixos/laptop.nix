@@ -26,7 +26,7 @@
     fsType = "ntfs-3g";
   };
 
-  services.xserver.videoDrivers = [ "intel" "nvidia" ];
+  services.xserver.videoDrivers = [ "intel" ]; # "nvidia" ];
 
   networking.hostName = "eki";
 }

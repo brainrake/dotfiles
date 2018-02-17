@@ -9,7 +9,7 @@
   hardware = {
     opengl = rec {
       driSupport32Bit = true;
-      extraPackages = with pkgs; [ vaapiIntel libvdpau-va-gl vaapiVdpau ] ;
+      extraPackages = with pkgs; [ vaapiIntel ]; # libvdpau-va-gl vaapiVdpau ] ;
       extraPackages32 = extraPackages;
     };
     bluetooth.enable = true;
