@@ -62,7 +62,7 @@ alias t='setsid urxvt -cd $PWD'
 alias n='nix-shell --command zsh'
 alias nr='nix-shell --command zsh --run "$1"'
 
-nix(){ nix-env -qaP \* -f '<nixpkgs>' | grep -i "$1"; }
+nixf(){ nix-env -qaP \* -f '<nixpkgs>' | grep -i "$1"; }
 nixh(){ nix-env  -qaP -f '<nixpkgs>' -A haskellPackages | grep -i "$1"; }
 
 [[ -x `command -v keychain` ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
