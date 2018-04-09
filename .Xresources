@@ -1,4 +1,4 @@
-URxvt.font: xft:Terminus:pixelsize=18
+URxvt.font: xft:Terminus:pixelsize=20
 !URXvt.boldFont: xft:Terminus Bold
 !URxvt.keysym.M-u:perl:url-select:select_next
 URxvt.saveLines: 65535
