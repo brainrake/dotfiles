@@ -24,6 +24,8 @@
       "elastic-tabstops"
       "tabs"
       "elmjutsu"
+      "linter"
+      "linter-mypy"
     ]
     projectHome: "/home/ssdd/dev"
     telemetryConsent: "no"
@@ -35,6 +37,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Fira Sans"
+    fontSize: 20
     invisibles: {}
     lineHeight: 1.2
     scrollPastEnd: true
@@ -65,10 +68,13 @@
     scaleFactor: 1.5
   "highlight-selected":
     hideHighlightOnSelectedWord: true
+  "ide-haskell": {}
   "ide-purescript": {}
   "language-elm":
     autocompleteEnabled: false
   "language-idris":
+    panelFontFamily: "Fira Code"
+    panelFontLigatures: true
     panelFontSize: 20
   linter:
     disabledProviders: [
@@ -111,6 +117,9 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
+".idris.source":
+  editor:
+    showIndentGuide: true
 ".nix.source":
   editor:
     tabLength: 2
