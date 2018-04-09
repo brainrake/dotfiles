@@ -49,7 +49,7 @@
   users.extraUsers.ssdd = {
     isNormalUser = true;
     uid = 1000;
-    extraGroups = [ "wheel" "networkmanager" "vboxusers" "docker" "dialout" "audio" "video"];
+    extraGroups = [ "wheel" "networkmanager" "vboxusers" "docker" "dialout" "audio" "video" "storage" ];
     shell = "/run/current-system/sw/bin/zsh";
   };
 
