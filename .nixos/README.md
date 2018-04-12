@@ -1,1 +1,1 @@
-Import one of the configurations in `configuration.nix`. See [configuration.nix.example](configuration.nix.example)
+In your `configuration.nix`, Import one of the configurations. See [configuration.nix.example](configuration.nix.example)
