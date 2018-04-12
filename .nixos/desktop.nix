@@ -2,8 +2,8 @@
 {
   imports = [ ./common.nix ./graphical.nix ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  networking.hostName = "lada";
+  # TODO:
+  #   - bluetooth audio
+  #   - opensnitch
+  #   - little flocker
 }
