@@ -12,7 +12,13 @@
       extraPackages = with pkgs; [ vaapiIntel ]; # libvdpau-va-gl vaapiVdpau ] ;
       extraPackages32 = extraPackages;
     };
-    bluetooth.enable = true;
+    bluetooth = {
+      enable = true;
+      extraConfig = ''
+        [General]
+        Enable=Source,Sink,Media,Socket
+      '';
+    };
     pulseaudio = {
       enable = true;
       package = pkgs.pulseaudioFull;
@@ -69,4 +75,5 @@
     i3 i3status i3lock dmenu rxvt_unicode
   ];
 
+  i18n.inputMethod.enabled = "fcitx";
 }

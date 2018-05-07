@@ -22,11 +22,16 @@
   fileSystems."/boot".device = "/dev/nvme0n1p1";
   fileSystems."/w" = {
     device = "/dev/nvme0n1p3";
-    options = [ "ro" "defaults" "umask=000" "noatime" ];
+    options = [ "rw" "defaults" "umask=000" "noatime" ];
     fsType = "ntfs-3g";
   };
 
   services.xserver.videoDrivers = [ "intel" ]; # "nvidia" ];
 
   networking.hostName = "eki";
+
+  programs.adb.enable = true;
+
+  services.keybase.enable = true;
+  services.kbfs.enable = true;
 }
