@@ -16,9 +16,10 @@ order += "disk /"
 #order += "ethernet eth0"
 order += "cpu_usages"
 order += "load"
-order += "cpu_temperature 0"
+#order += "cpu_temperature 0"
 order += "tztime utc"
-order += "time"
+order += "tztime np"
+#order += "time"
 
 wireless wlp58s0 {
   format_up = " w %quality %ip %essid "
@@ -66,10 +67,15 @@ disk "/home" {
 }
 
 time {
-  format = " %a %Y-%m-%d %H:%M:%S "
+  format = " %a %Y-%m-%d %H:%M:%S hu"
 }
 
 tztime utc {
   timezone = "UTC"
-  format = " %H:%M:%S utc "
+  format = " %a %Y-%m-%d %H:%M:%S utc "
+}
+
+tztime np {
+  timezone = "Asia/Katmandu"
+  format = " %H:%M np "
 }
