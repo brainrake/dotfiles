@@ -1,4 +1,9 @@
 "*":
+  Zen:
+    fullscreen: false
+    gutter: true
+    softWrap: true
+    width: 120
   "agda-mode":
     internalState: "{\"connections\":[],\"erred\":[]}"
   "atom-pair": {}
@@ -8,6 +13,8 @@
     includeCompletionsFromAllBuffers: false
   autosave:
     enabled: true
+  "bracket-matcher":
+    alwaysSkipClosingPairs: true
   "command-palette":
     preserveLastSearch: true
   core:
@@ -19,25 +26,26 @@
       "spell-check"
       "ide-purescript"
       "hasklig"
-      "firacode"
       "elm-navigator"
       "elastic-tabstops"
       "tabs"
       "elmjutsu"
       "linter"
       "linter-mypy"
+      "firacode"
+      "haskell-debug"
     ]
     projectHome: "/home/ssdd/dev"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "atom-dark-syntax"
+      "snow-dark-syntax"
     ]
   "document-outline": {}
   editor:
     autoIndentOnPaste: false
     fontFamily: "Fira Sans"
-    fontSize: 20
+    fontSize: 22
     invisibles: {}
     lineHeight: 1.2
     scrollPastEnd: true
