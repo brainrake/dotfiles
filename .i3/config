@@ -1,9 +1,10 @@
 exec "export QT_STYLE_OVERRIDE=gtk"
-#exec "volumeicon"
+exec "volumeicon"
+exec "nm-applet"
 exec "xrdb .Xresources"
 exec "xkbcomp .xkb $DISPLAY"
 exec "xset r rate 250 30"
-# exec "if ! glxinfo | grep -i --quiet 'vendor string: VMWare'; then compton --backend=glx --vsync=opengl-swc; fi"
+exec "compton --backend=glx --vsync=opengl-swc"
 exec "xsetroot -solid rgb:00/2b/36"
 exec "hsetroot -solid "#002b36"
 
@@ -12,6 +13,7 @@ exec "hsetroot -solid "#002b36"
 #exec 'dropboxd'
 #exec 'setxkbmap -layout "us,hu(qwerty)" -option "ctrl:nocaps,grp:switch"'
 #exec start-pulseaudio-x11
+exec 'kbfsfuse /keybase'
 
 bindsym $mod+u exec "xkbcomp .xkb $DISPLAY; xset r rate 250 30"
 
