@@ -59,11 +59,13 @@ alias g='git'
 
 alias t='setsid urxvt -cd $PWD'
 
-alias n='nix-shell --command zsh'
-alias nr='nix-shell --command zsh --run "$1"'
+alias n='nix-shell --show-trace --command zsh'
+alias nr='nix-shell --show-trace command zsh --run "$1"'
 
 nixf(){ nix-env -qaP \* -f '<nixpkgs>' | grep -i "$1"; }
 nixh(){ nix-env  -qaP -f '<nixpkgs>' -A haskellPackages | grep -i "$1"; }
+
+alias comp='compton --backend=glx --vsync=opengl-swc'
 
 [[ -x `command -v keychain` ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 #envoy -t gpg-agent
@@ -80,3 +82,5 @@ PATH=$PATH:$HOME/.cabal/bin
 PATH=$PATH:$HOME/.npm_global/bin:node_modules/.bin
 PATH=$PATH:$HOME/.bin
 PATH=$PATH:$HOME/.local/bin
+
+export PATH=/home/ssdd/.local/bin:$PATH
