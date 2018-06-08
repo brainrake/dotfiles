@@ -75,5 +75,5 @@
     i3 i3status i3lock dmenu rxvt_unicode
   ];
 
-  i18n.inputMethod.enabled = "fcitx";
+  # i18n.inputMethod.enabled = "fcitx";
 }
