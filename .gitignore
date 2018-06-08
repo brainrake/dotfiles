@@ -17,6 +17,8 @@
 !/.config/
 !/.config/doublecmd/
 !/.config/doublecmd/doublecmd.xml
+!/.config/gtk-3.0/
+!/.config/gtk-3.0/settings.ini
 !/.config/i3status/
 !/.config/i3status/config
 !/.config/mpv/
