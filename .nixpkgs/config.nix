@@ -1,6 +1,8 @@
-{
+let
+  bitwig-jar = ./bitwig.jar;
+in {
   allowUnfree = true;
-  chromium.enablePepperFlash = true;
+  # chromium.enablePepperFlash = true;
   chromium.enablePepperPDF = true;
   # firefox.enableGoogleTalkPlugin = true;
   firefox.enableAdobeFlash = true;
@@ -14,17 +16,18 @@
       name = "my_dev";
       paths = [ my_desktop ] ++ (with pkgs; [
         gnome3.seahorse
-        google-chrome
+        # google-chrome
         firefox
         git gcc racket nix-repl direnv meld file graphviz imagemagick
-        elmPackages.elm
+        # elmPackages.elm
         # haskellPackages.idris
         #haskellPackages.purescript
-        nodejs nodePackages.coffee-script
+        # nodejs
         sublime3 textadept atom
         mixxx
         gimp
         urbit
+        haskellPackages.sws
       ]);
     };
     my_desktop = pkgs.buildEnv {
@@ -32,27 +35,35 @@
       paths = [ my_tools ] ++ (with pkgs; [
         i3 i3status i3lock dmenu
         chromium # thunderbird
-        xorg.xbacklight xorg.xev xorg.xkbcomp xorg.xmodmap hsetroot glxinfo volumeicon xorg.xev compton kdeconnect
+        xorg.xbacklight xorg.xev xorg.xkbcomp xorg.xmodmap hsetroot glxinfo volumeicon networkmanagerapplet xorg.xev compton kdeconnect
         rxvt_unicode feh geeqie scrot arandr lxappearance mpv pcmanfm gcolor2 evince paprefs pavucontrol
         transmission_gtk
         pidgin pidginotr pidginlatex purple-hangouts purple-plugin-pack toxprpl
         qesteidutil qdigidoc
+        vanilla-dmz
       ]);
     };
     my_tools = pkgs.buildEnv {
       name = "my_tools";
       paths = with pkgs; [
-        iputils bind nmap mtr iptraf wget gnupg mkpasswd
+        iputils bind nmap mtr wget gnupg mkpasswd
         nox bc mc mc-solarized htop psmisc pciutils lm_sensors
       ];
     };
     mc-solarized = pkgs.writeTextFile {
-        name = "mc-solarized";
-        destination = "/share/mc-solarized/solarized.ini";
-        text =pkgs.fetchurl {
-          url = "https://raw.githubusercontent.com/peel/mc/05009685f34c48e0da58662214253c31c1620d47/solarized.ini";
-          sha256 = "13p2flyn0i1c88xkycy2rk24d51can8ff31gh3c6djni3p981waq";
-        };
+      name = "mc-solarized";
+      destination = "/share/mc-solarized/solarized.ini";
+      text =pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/peel/mc/05009685f34c48e0da58662214253c31c1620d47/solarized.ini";
+        sha256 = "13p2flyn0i1c88xkycy2rk24d51can8ff31gh3c6djni3p981waq";
       };
+    };
+
+    /* bitwig-studio2 = pkgs.bitwig-studio2.overrideAttrs (old : {
+      postUnpack = ''
+        rm root/opt/bitwig-studio/bin/bitwig.jar
+        cp ${bitwig-jar} root/opt/bitwig-studio/bin/bitwig.jar
+      '';
+    }); */
   };
 }
