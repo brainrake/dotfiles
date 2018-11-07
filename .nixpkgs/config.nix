@@ -5,7 +5,7 @@ in {
   # chromium.enablePepperFlash = true;
   chromium.enablePepperPDF = true;
   # firefox.enableGoogleTalkPlugin = true;
-  firefox.enableAdobeFlash = true;
+  # firefox.enableAdobeFlash = true;
   firefox.enableEsteid = true;
   packageOverrides = pkgs: rec {
     my_ = pkgs.buildEnv {
@@ -18,7 +18,7 @@ in {
         gnome3.seahorse
         # google-chrome
         firefox
-        git gcc racket nix-repl direnv meld file graphviz imagemagick
+        git gcc racket direnv meld file graphviz imagemagick
         # elmPackages.elm
         # haskellPackages.idris
         #haskellPackages.purescript
@@ -38,8 +38,8 @@ in {
         xorg.xbacklight xorg.xev xorg.xkbcomp xorg.xmodmap hsetroot glxinfo volumeicon networkmanagerapplet xorg.xev compton kdeconnect
         rxvt_unicode feh geeqie scrot arandr lxappearance mpv pcmanfm gcolor2 evince paprefs pavucontrol
         transmission_gtk
-        pidgin pidginotr pidginlatex purple-hangouts purple-plugin-pack toxprpl
-        qesteidutil qdigidoc
+        # pidgin pidginotr pidginlatex purple-hangouts purple-plugin-pack toxprpl
+        # qesteidutil qdigidoc
         vanilla-dmz
       ]);
     };
