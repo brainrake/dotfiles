@@ -6,6 +6,8 @@
     width: 120
   "agda-mode":
     internalState: "{\"connections\":[],\"erred\":[]}"
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui": {}
   "atom-pair": {}
   "atom-typescript": {}
   "autocomplete-plus":
@@ -14,7 +16,8 @@
   autosave:
     enabled: true
   "bracket-matcher":
-    alwaysSkipClosingPairs: true
+    autocompleteBrackets: false
+    highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
   core:
@@ -28,12 +31,13 @@
       "hasklig"
       "elm-navigator"
       "elastic-tabstops"
-      "tabs"
       "elmjutsu"
       "linter"
       "linter-mypy"
       "firacode"
       "haskell-debug"
+      "linter-elm-make"
+      "coolsor"
     ]
     projectHome: "/home/ssdd/dev"
     telemetryConsent: "no"
@@ -45,7 +49,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Fira Sans"
-    fontSize: 22
+    fontSize: 39
     invisibles: {}
     lineHeight: 1.2
     scrollPastEnd: true
@@ -93,7 +97,6 @@
     executablePath: "/home/ssdd/dev/$PROJECT_NAME/.venv/bin/python"
   "linter-ui-default":
     panelHeight: 99.33333587646484
-    showPanel: true
   minimap:
     absoluteMode: true
     plugins:
