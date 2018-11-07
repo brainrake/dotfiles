@@ -64,6 +64,7 @@ alias nr='nix-shell --show-trace command zsh --run "$1"'
 
 nixf(){ nix-env -qaP \* -f '<nixpkgs>' | grep -i "$1"; }
 nixh(){ nix-env  -qaP -f '<nixpkgs>' -A haskellPackages | grep -i "$1"; }
+just(){ nix-shell -p "$1" --command "$(echo "$@")"; }
 
 alias comp='compton --backend=glx --vsync=opengl-swc'
 
