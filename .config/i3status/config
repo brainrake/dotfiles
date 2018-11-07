@@ -18,7 +18,8 @@ order += "cpu_usages"
 order += "load"
 #order += "cpu_temperature 0"
 order += "tztime utc"
-order += "tztime np"
+#order += "tztime hu"
+order += "tztime ro"
 #order += "time"
 
 wireless wlp58s0 {
@@ -75,7 +76,13 @@ tztime utc {
   format = " %a %Y-%m-%d %H:%M:%S utc "
 }
 
-tztime np {
-  timezone = "Asia/Katmandu"
-  format = " %H:%M np "
+tztime hu {
+  timezone = "Europe/Budapest"
+  format = " %H:%M hu "
 }
+
+tztime ro {
+  timezone = "Europe/Bucharest"
+  format = " %H:%M ro "
+}
+
