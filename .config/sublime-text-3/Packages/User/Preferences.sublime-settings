@@ -39,7 +39,7 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 1,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/User/SublimeLinter/base16-ashes (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Blackboard (SL).tmTheme",
 	"draw_indent_guides": false,
 	"draw_minimap_border": true,
 	"enable_tab_scrolling": true,
@@ -86,7 +86,7 @@
 	[
 		"//no_antialias"
 	],
-	"font_size": 21,
+	"font_size": 23,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
