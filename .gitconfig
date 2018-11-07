@@ -10,6 +10,7 @@
   c = commit -m
   m = merge
   d = diff --color-words
+  ca = commit --amend --no-edit
 [push]
 	default = current
 [merge]
