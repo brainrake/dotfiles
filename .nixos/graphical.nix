@@ -1,8 +1,8 @@
 {congig, lib, pkgs, ...}: 
 {
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.docker.enable = true;
-  virtualisation.libvirtd.enable = true;
+  #virtualisation.virtualbox.host.enable = true;
+  #virtualisation.docker.enable = true;
+  #virtualisation.libvirtd.enable = true;
 
   networking.networkmanager.enable = true;
 

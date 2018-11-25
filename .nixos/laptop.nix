@@ -30,7 +30,7 @@
 
   networking.hostName = "eki";
 
-  programs.adb.enable = true;
+  # programs.adb.enable = true;
 
   services.keybase.enable = true;
   services.kbfs.enable = true;

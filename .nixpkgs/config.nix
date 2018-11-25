@@ -27,7 +27,6 @@ in {
         mixxx
         gimp
         urbit
-        haskellPackages.sws
       ]);
     };
     my_desktop = pkgs.buildEnv {

@@ -3,7 +3,7 @@
   imports = [ ./hardware-configuration.nix ];
 
   boot.earlyVconsoleSetup = true;
-  boot.kernelParams = [ "systemd.legacy_systemd_cgroup_controller=yes" ]; # pray for docker
+  # boot.kernelParams = [ "systemd.legacy_systemd_cgroup_controller=yes" ]; # pray for docker
   boot.supportedFilesystems = [ "ext" "exfat" "vfat" "ntfs" "xfs" ];
 
   nix.useSandbox = true;
