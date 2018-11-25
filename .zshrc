@@ -68,6 +68,8 @@ just(){ nix-shell -p "$1" --command "$(echo "$@")"; }
 
 alias comp='compton --backend=glx --vsync=opengl-swc'
 
+alias y='noglob youtube-dl --extract-audio --audio-format flac '
+
 [[ -x `command -v keychain` ]] && eval $(keychain --eval -Q --quiet id_ecdsa id_rsa)
 #envoy -t gpg-agent
 #source <(envoy -p -t gpg-agent)
