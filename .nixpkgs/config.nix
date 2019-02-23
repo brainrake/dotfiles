@@ -46,7 +46,9 @@ in {
       name = "my_tools";
       paths = with pkgs; [
         iputils bind nmap mtr wget gnupg mkpasswd
-        nox bc mc mc-solarized htop psmisc pciutils lm_sensors
+        htop psmisc unzip bc mc mc-solarized
+        pciutils lm_sensors
+        nox
       ];
     };
     mc-solarized = pkgs.writeTextFile {
