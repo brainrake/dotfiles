@@ -5,8 +5,8 @@ exec "xrdb .Xresources"
 exec "xkbcomp .xkb $DISPLAY"
 exec "xset r rate 200 30"
 #exec "compton --backend=glx --vsync=opengl-swc"
-exec "xsetroot -solid rgb:00/2b/36"
-exec "hsetroot -solid "#002b36"
+#exec "xsetroot -solid rgb:00/2b/36"
+#exec "hsetroot -solid "#002b36"
 
 #exec touchegg
 #exec "urxvtd -o -f"
