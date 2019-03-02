@@ -1,9 +1,7 @@
-let
-  bitwig-jar = ./bitwig.jar;
-in {
+{
   allowUnfree = true;
-  # chromium.enablePepperFlash = true;
-  chromium.enablePepperPDF = true;
+  chromium.enablePepperFlash = true;
+  # meytchromium.enablePepperPDF = true;
   # firefox.enableGoogleTalkPlugin = true;
   # firefox.enableAdobeFlash = true;
   firefox.enableEsteid = true;
@@ -23,7 +21,7 @@ in {
         # haskellPackages.idris
         #haskellPackages.purescript
         # nodejs
-        sublime3 textadept atom
+        sublime3 atom
         mixxx
         gimp
         urbit
@@ -63,7 +61,7 @@ in {
     /* bitwig-studio2 = pkgs.bitwig-studio2.overrideAttrs (old : {
       postUnpack = ''
         rm root/opt/bitwig-studio/bin/bitwig.jar
-        cp ${bitwig-jar} root/opt/bitwig-studio/bin/bitwig.jar
+        cp ${./bitwig.nix} root/opt/bitwig-studio/bin/bitwig.jar
       '';
     }); */
   };
